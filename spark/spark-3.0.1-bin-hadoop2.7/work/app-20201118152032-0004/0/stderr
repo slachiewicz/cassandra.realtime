@@ -1,0 +1,30 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=43909" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-a079cda6-7ce0-4381-9843-8a14b54c3899:43909" "--executor-id" "0" "--hostname" "10.8.1.247" "--cores" "5" "--app-id" "app-20201118152032-0004" "--worker-url" "spark://Worker@10.8.1.247:44437"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/18 15:20:33 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 14183@ws-a079cda6-7ce0-4381-9843-8a14b54c3899
+20/11/18 15:20:33 INFO SignalUtils: Registered signal handler for TERM
+20/11/18 15:20:33 INFO SignalUtils: Registered signal handler for HUP
+20/11/18 15:20:33 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/18 15:20:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/18 15:20:35 INFO SecurityManager: Changing view acls to: gitpod
+20/11/18 15:20:35 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/18 15:20:35 INFO SecurityManager: Changing view acls groups to: 
+20/11/18 15:20:35 INFO SecurityManager: Changing modify acls groups to: 
+20/11/18 15:20:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/18 15:20:35 INFO TransportClientFactory: Successfully created connection to ws-a079cda6-7ce0-4381-9843-8a14b54c3899/10.8.1.247:43909 after 121 ms (0 ms spent in bootstraps)
+20/11/18 15:20:35 INFO SecurityManager: Changing view acls to: gitpod
+20/11/18 15:20:35 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/18 15:20:35 INFO SecurityManager: Changing view acls groups to: 
+20/11/18 15:20:35 INFO SecurityManager: Changing modify acls groups to: 
+20/11/18 15:20:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/18 15:20:36 INFO TransportClientFactory: Successfully created connection to ws-a079cda6-7ce0-4381-9843-8a14b54c3899/10.8.1.247:43909 after 5 ms (0 ms spent in bootstraps)
+20/11/18 15:20:36 INFO DiskBlockManager: Created local directory at /tmp/spark-61d69166-7910-43f4-bdbb-aaf01fff3aba/executor-8e414806-8eb1-46d2-a67f-08ec85559078/blockmgr-7a64d312-5149-4dab-9a33-0cb3f017551b
+20/11/18 15:20:36 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+1d69166-7910-43f4-bdbb-aaf01fff3aba/executor-8e414806-8eb1-46d2-a67f-08ec85559078/blockmgr-7a64d312-5149-4dab-9a33-0cb3f017551b

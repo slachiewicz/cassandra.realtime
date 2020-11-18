@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(/quit, Some(5bc26a6b-9446-48d6-abd3-fca04f11ee37), Some(CommandSource(console0)))[0m[0J
+[0m[[0m[31merror[0m] [0m[0mExpected symbol[0m[0J
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: /[0m[0J
+[0m[[0m[31merror[0m] [0m[0m/quit[0m[0J
+[0m[[0m[31merror[0m] [0m[0m ^[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m[0J

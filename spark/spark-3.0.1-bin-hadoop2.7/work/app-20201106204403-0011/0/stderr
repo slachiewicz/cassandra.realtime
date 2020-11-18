@@ -1,0 +1,178 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=41219" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca:41219" "--executor-id" "0" "--hostname" "10.8.3.37" "--cores" "5" "--app-id" "app-20201106204403-0011" "--worker-url" "spark://Worker@10.8.3.37:36683"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/06 20:44:04 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 71528@ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca
+20/11/06 20:44:04 INFO SignalUtils: Registered signal handler for TERM
+20/11/06 20:44:04 INFO SignalUtils: Registered signal handler for HUP
+20/11/06 20:44:04 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/06 20:44:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/06 20:44:05 INFO SecurityManager: Changing view acls to: gitpod
+20/11/06 20:44:05 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/06 20:44:05 INFO SecurityManager: Changing view acls groups to: 
+20/11/06 20:44:05 INFO SecurityManager: Changing modify acls groups to: 
+20/11/06 20:44:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/06 20:44:06 INFO TransportClientFactory: Successfully created connection to ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:41219 after 91 ms (0 ms spent in bootstraps)
+20/11/06 20:44:06 INFO SecurityManager: Changing view acls to: gitpod
+20/11/06 20:44:06 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/06 20:44:06 INFO SecurityManager: Changing view acls groups to: 
+20/11/06 20:44:06 INFO SecurityManager: Changing modify acls groups to: 
+20/11/06 20:44:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/06 20:44:06 INFO TransportClientFactory: Successfully created connection to ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:41219 after 4 ms (0 ms spent in bootstraps)
+20/11/06 20:44:06 INFO DiskBlockManager: Created local directory at /tmp/spark-405cca3e-2e0f-47e9-8c19-996387863b2f/executor-05dc4575-8a6a-4220-b96f-639c4556bba0/blockmgr-533036f8-1d8d-46d8-92fd-80bdd3e9a4d6
+20/11/06 20:44:07 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+20/11/06 20:44:07 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca:41219
+20/11/06 20:44:07 INFO WorkerWatcher: Connecting to worker spark://Worker@10.8.3.37:36683
+20/11/06 20:44:07 INFO TransportClientFactory: Successfully created connection to /10.8.3.37:36683 after 6 ms (0 ms spent in bootstraps)
+20/11/06 20:44:07 INFO WorkerWatcher: Successfully connected to spark://Worker@10.8.3.37:36683
+20/11/06 20:44:07 INFO ResourceUtils: ==============================================================
+20/11/06 20:44:07 INFO ResourceUtils: Resources for spark.executor:
+
+20/11/06 20:44:07 INFO ResourceUtils: ==============================================================
+20/11/06 20:44:07 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/11/06 20:44:07 INFO Executor: Starting executor ID 0 on host 10.8.3.37
+20/11/06 20:44:07 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41921.
+20/11/06 20:44:07 INFO NettyBlockTransferService: Server created on 10.8.3.37:41921
+20/11/06 20:44:07 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/11/06 20:44:07 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 10.8.3.37, 41921, None)
+20/11/06 20:44:07 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 10.8.3.37, 41921, None)
+20/11/06 20:44:07 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 10.8.3.37, 41921, None)
+20/11/06 20:44:12 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+20/11/06 20:44:12 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+20/11/06 20:44:12 INFO Executor: Fetching spark://ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca:41219/files/secure-connect-demo.zip with timestamp 1604695443645
+20/11/06 20:44:12 INFO TransportClientFactory: Successfully created connection to ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:41219 after 3 ms (0 ms spent in bootstraps)
+20/11/06 20:44:12 INFO Utils: Fetching spark://ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca:41219/files/secure-connect-demo.zip to /tmp/spark-405cca3e-2e0f-47e9-8c19-996387863b2f/executor-05dc4575-8a6a-4220-b96f-639c4556bba0/spark-646c394c-0a3f-47b7-8b1f-20a9bc6a36b6/fetchFileTemp8068747231512849859.tmp
+20/11/06 20:44:12 INFO Utils: Copying /tmp/spark-405cca3e-2e0f-47e9-8c19-996387863b2f/executor-05dc4575-8a6a-4220-b96f-639c4556bba0/spark-646c394c-0a3f-47b7-8b1f-20a9bc6a36b6/-15753745571604695443645_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201106204403-0011/0/./secure-connect-demo.zip
+20/11/06 20:44:13 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+java.lang.ClassNotFoundException: com.datastax.spark.connector.rdd.partitioner.CassandraPartition
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.apache.spark.serializer.JavaDeserializationStream$$anon$1.resolveClass(JavaSerializer.scala:68)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1941)
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1827)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2115)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2410)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2304)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2142)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:464)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:76)
+	at org.apache.spark.serializer.JavaSerializerInstance.deserialize(JavaSerializer.scala:115)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:407)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/06 20:44:13 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+20/11/06 20:44:13 INFO Executor: Running task 0.1 in stage 0.0 (TID 1)
+20/11/06 20:44:13 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 1)
+java.lang.ClassNotFoundException: com.datastax.spark.connector.rdd.partitioner.CassandraPartition
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.apache.spark.serializer.JavaDeserializationStream$$anon$1.resolveClass(JavaSerializer.scala:68)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1941)
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1827)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2115)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2410)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2304)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2142)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:464)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:76)
+	at org.apache.spark.serializer.JavaSerializerInstance.deserialize(JavaSerializer.scala:115)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:407)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/06 20:44:13 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+20/11/06 20:44:13 INFO Executor: Running task 0.2 in stage 0.0 (TID 2)
+20/11/06 20:44:13 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 2)
+java.lang.ClassNotFoundException: com.datastax.spark.connector.rdd.partitioner.CassandraPartition
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.apache.spark.serializer.JavaDeserializationStream$$anon$1.resolveClass(JavaSerializer.scala:68)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1941)
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1827)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2115)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2410)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2304)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2142)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:464)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:76)
+	at org.apache.spark.serializer.JavaSerializerInstance.deserialize(JavaSerializer.scala:115)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:407)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/06 20:44:13 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+20/11/06 20:44:13 INFO Executor: Running task 0.3 in stage 0.0 (TID 3)
+20/11/06 20:44:13 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 3)
+java.lang.ClassNotFoundException: com.datastax.spark.connector.rdd.partitioner.CassandraPartition
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.apache.spark.serializer.JavaDeserializationStream$$anon$1.resolveClass(JavaSerializer.scala:68)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1941)
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1827)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2115)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2410)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2304)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2142)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:464)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:76)
+	at org.apache.spark.serializer.JavaSerializerInstance.deserialize(JavaSerializer.scala:115)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:407)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/06 20:44:24 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+)
+java.lang.ClassNotFoundException: com.datastax.spark.connector.rdd.partitioner.CassandraPartition
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.apache.spark.serializer.JavaDeserializationStream$$anon$1.resolveClass(JavaSerializer.scala:68)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1941)
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1827)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2115)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2410)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2304)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2142)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1646)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:464)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:76)
+	at org.apache.spark.serializer.JavaSerializerInstance.deserialize(JavaSerializer.scala:115)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:407)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)

@@ -1,0 +1,256 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=43097" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097" "--executor-id" "0" "--hostname" "10.8.9.203" "--cores" "5" "--app-id" "app-20201117213820-0020" "--worker-url" "spark://Worker@10.8.9.203:37659"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/17 21:38:21 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 110035@ws-763ae24b-f444-4ec9-ab04-58a9b208cf41
+20/11/17 21:38:21 INFO SignalUtils: Registered signal handler for TERM
+20/11/17 21:38:21 INFO SignalUtils: Registered signal handler for HUP
+20/11/17 21:38:21 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/17 21:38:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/17 21:38:22 INFO SecurityManager: Changing view acls to: gitpod
+20/11/17 21:38:22 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/17 21:38:22 INFO SecurityManager: Changing view acls groups to: 
+20/11/17 21:38:22 INFO SecurityManager: Changing modify acls groups to: 
+20/11/17 21:38:22 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/17 21:38:23 INFO TransportClientFactory: Successfully created connection to ws-763ae24b-f444-4ec9-ab04-58a9b208cf41/10.8.9.203:43097 after 99 ms (0 ms spent in bootstraps)
+20/11/17 21:38:23 INFO SecurityManager: Changing view acls to: gitpod
+20/11/17 21:38:23 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/17 21:38:23 INFO SecurityManager: Changing view acls groups to: 
+20/11/17 21:38:23 INFO SecurityManager: Changing modify acls groups to: 
+20/11/17 21:38:23 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/17 21:38:23 INFO TransportClientFactory: Successfully created connection to ws-763ae24b-f444-4ec9-ab04-58a9b208cf41/10.8.9.203:43097 after 5 ms (0 ms spent in bootstraps)
+20/11/17 21:38:23 INFO DiskBlockManager: Created local directory at /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/blockmgr-073a5660-bac0-40f8-81fd-9e2b6343e6cd
+20/11/17 21:38:23 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+20/11/17 21:38:24 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097
+20/11/17 21:38:24 INFO WorkerWatcher: Connecting to worker spark://Worker@10.8.9.203:37659
+20/11/17 21:38:24 INFO TransportClientFactory: Successfully created connection to /10.8.9.203:37659 after 7 ms (0 ms spent in bootstraps)
+20/11/17 21:38:24 INFO WorkerWatcher: Successfully connected to spark://Worker@10.8.9.203:37659
+20/11/17 21:38:24 INFO ResourceUtils: ==============================================================
+20/11/17 21:38:24 INFO ResourceUtils: Resources for spark.executor:
+
+20/11/17 21:38:24 INFO ResourceUtils: ==============================================================
+20/11/17 21:38:24 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/11/17 21:38:24 INFO Executor: Starting executor ID 0 on host 10.8.9.203
+20/11/17 21:38:24 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40965.
+20/11/17 21:38:24 INFO NettyBlockTransferService: Server created on 10.8.9.203:40965
+20/11/17 21:38:24 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/11/17 21:38:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 10.8.9.203, 40965, None)
+20/11/17 21:38:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 10.8.9.203, 40965, None)
+20/11/17 21:38:24 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 10.8.9.203, 40965, None)
+20/11/17 21:38:27 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+20/11/17 21:38:27 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/files/secure-connect-demo.zip with timestamp 1605649099857
+20/11/17 21:38:28 INFO TransportClientFactory: Successfully created connection to ws-763ae24b-f444-4ec9-ab04-58a9b208cf41/10.8.9.203:43097 after 4 ms (0 ms spent in bootstraps)
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/files/secure-connect-demo.zip to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp17366013378400296306.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/-17613827201605649099857_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./secure-connect-demo.zip
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.lz4_lz4-java-1.6.0.jar with timestamp 1605649099854
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.lz4_lz4-java-1.6.0.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp11182154826720472241.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/-21064025211605649099854_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.lz4_lz4-java-1.6.0.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.lz4_lz4-java-1.6.0.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.xerial.snappy_snappy-java-1.1.7.3.jar with timestamp 1605649099854
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.xerial.snappy_snappy-java-1.1.7.3.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp12382178241985401211.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/19991066631605649099854_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.xerial.snappy_snappy-java-1.1.7.3.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.xerial.snappy_snappy-java-1.1.7.3.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.slf4j_slf4j-api-1.7.28.jar with timestamp 1605649099854
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.slf4j_slf4j-api-1.7.28.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp8961221579773829584.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/17783208101605649099854_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.slf4j_slf4j-api-1.7.28.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.slf4j_slf4j-api-1.7.28.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.apache.kafka_kafka-clients-2.4.1.jar with timestamp 1605649099853
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.apache.kafka_kafka-clients-2.4.1.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp1801510087499579926.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/14051455171605649099853_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.apache.kafka_kafka-clients-2.4.1.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.apache.kafka_kafka-clients-2.4.1.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.0.1.jar with timestamp 1605649099853
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.0.1.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp7509483947147172835.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/-7667603031605649099853_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.0.1.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.0.1.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/com.github.luben_zstd-jni-1.4.3-1.jar with timestamp 1605649099854
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/com.github.luben_zstd-jni-1.4.3-1.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp13427678643443568470.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/-416452201605649099854_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./com.github.luben_zstd-jni-1.4.3-1.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./com.github.luben_zstd-jni-1.4.3-1.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/spark-cassandra_2.12-0.1.0-SNAPSHOT.jar with timestamp 1605649099855
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/spark-cassandra_2.12-0.1.0-SNAPSHOT.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp12276595216949875124.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/-20152802061605649099855_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./spark-cassandra_2.12-0.1.0-SNAPSHOT.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./spark-cassandra_2.12-0.1.0-SNAPSHOT.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1605649099854
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp11901108941061534533.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/1447604761605649099854_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.spark-project.spark_unused-1.0.0.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.spark-project.spark_unused-1.0.0.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.apache.commons_commons-pool2-2.6.2.jar with timestamp 1605649099853
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.apache.commons_commons-pool2-2.6.2.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp12748747525422845087.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/12083043861605649099853_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.apache.commons_commons-pool2-2.6.2.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.apache.commons_commons-pool2-2.6.2.jar to class loader
+20/11/17 21:38:28 INFO Executor: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.0.1.jar with timestamp 1605649099852
+20/11/17 21:38:28 INFO Utils: Fetching spark://ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:43097/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.0.1.jar to /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/fetchFileTemp10960846812994001621.tmp
+20/11/17 21:38:28 INFO Utils: Copying /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-9c9dec21-4661-45d1-9186-d2a2998eb6ec/spark-d803653a-fb95-468e-9808-51f89375c015/12280485861605649099852_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.apache.spark_spark-sql-kafka-0-10_2.12-3.0.1.jar
+20/11/17 21:38:28 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201117213820-0020/0/./org.apache.spark_spark-sql-kafka-0-10_2.12-3.0.1.jar to class loader
+20/11/17 21:38:28 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+20/11/17 21:38:28 INFO TransportClientFactory: Successfully created connection to ws-763ae24b-f444-4ec9-ab04-58a9b208cf41/10.8.9.203:33441 after 3 ms (0 ms spent in bootstraps)
+20/11/17 21:38:28 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 1485.0 B, free 434.4 MiB)
+20/11/17 21:38:28 INFO TorrentBroadcast: Reading broadcast variable 0 took 181 ms
+20/11/17 21:38:28 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 2.3 KiB, free 434.4 MiB)
+20/11/17 21:38:28 INFO DataWritingSparkTask: Commit authorized for partition 0 (task 0, attempt 0, stage 0.0)
+20/11/17 21:38:28 INFO DataWritingSparkTask: Committed partition 0 (task 0, attempt 0, stage 0.0)
+20/11/17 21:38:28 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1240 bytes result sent to driver
+20/11/17 21:38:33 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+20/11/17 21:38:33 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+20/11/17 21:38:33 INFO TorrentBroadcast: Started reading broadcast variable 1 with 1 pieces (estimated total size 4.0 MiB)
+20/11/17 21:38:33 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 434.4 MiB)
+20/11/17 21:38:33 INFO TorrentBroadcast: Reading broadcast variable 1 took 17 ms
+20/11/17 21:38:33 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.8 KiB, free 434.4 MiB)
+20/11/17 21:38:34 INFO CodeGenerator: Code generated in 293.047134 ms
+20/11/17 21:38:34 INFO CodeGenerator: Code generated in 34.95282 ms
+20/11/17 21:38:34 INFO CodeGenerator: Code generated in 51.536943 ms
+20/11/17 21:38:34 INFO ConsumerConfig: ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+20/11/17 21:38:34 INFO AppInfoParser: Kafka version: 2.4.1
+20/11/17 21:38:34 INFO AppInfoParser: Kafka commitId: c57222ae8cd7866b
+20/11/17 21:38:34 INFO AppInfoParser: Kafka startTimeMs: 1605649114742
+20/11/17 21:38:34 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Subscribed to partition(s): record-cassandra-leaves-avro-0
+20/11/17 21:38:34 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 21978 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:35 INFO Metadata: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Cluster ID: NRzzcZosTEOCy6S9R5oouw
+20/11/17 21:38:35 INFO DataWritingSparkTask: Commit authorized for partition 0 (task 1, attempt 0, stage 1.0)
+20/11/17 21:38:35 INFO DataWritingSparkTask: Committed partition 0 (task 1, attempt 0, stage 1.0)
+20/11/17 21:38:35 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 166670 bytes result sent to driver
+20/11/17 21:38:36 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+20/11/17 21:38:36 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+20/11/17 21:38:36 INFO TorrentBroadcast: Started reading broadcast variable 2 with 1 pieces (estimated total size 4.0 MiB)
+20/11/17 21:38:36 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 434.4 MiB)
+20/11/17 21:38:36 INFO TorrentBroadcast: Reading broadcast variable 2 took 40 ms
+20/11/17 21:38:36 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 8.8 KiB, free 434.4 MiB)
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22000 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22028 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22050 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22070 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22099 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22122 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22141 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22167 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22195 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22222 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22248 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22268 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22299 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:36 INFO DataWritingSparkTask: Commit authorized for partition 0 (task 2, attempt 0, stage 2.0)
+20/11/17 21:38:36 INFO DataWritingSparkTask: Committed partition 0 (task 2, attempt 0, stage 2.0)
+20/11/17 21:38:37 INFO MemoryStore: Block taskresult_2 stored as bytes in memory (estimated size 13.6 MiB, free 420.8 MiB)
+20/11/17 21:38:37 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 14238368 bytes result sent via BlockManager)
+20/11/17 21:38:37 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+20/11/17 21:38:37 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+20/11/17 21:38:37 INFO TorrentBroadcast: Started reading broadcast variable 3 with 1 pieces (estimated total size 4.0 MiB)
+20/11/17 21:38:37 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 434.4 MiB)
+20/11/17 21:38:37 INFO TorrentBroadcast: Reading broadcast variable 3 took 20 ms
+20/11/17 21:38:37 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 8.8 KiB, free 434.4 MiB)
+20/11/17 21:38:37 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22329 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:37 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22366 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:37 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22419 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:37 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22467 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:37 INFO DataWritingSparkTask: Commit authorized for partition 0 (task 3, attempt 0, stage 3.0)
+20/11/17 21:38:37 INFO DataWritingSparkTask: Committed partition 0 (task 3, attempt 0, stage 3.0)
+20/11/17 21:38:37 INFO MemoryStore: Block taskresult_3 stored as bytes in memory (estimated size 4.2 MiB, free 430.2 MiB)
+20/11/17 21:38:37 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 4369421 bytes result sent via BlockManager)
+20/11/17 21:38:38 INFO CoarseGrainedExecutorBackend: Got assigned task 4
+20/11/17 21:38:38 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+20/11/17 21:38:38 INFO TorrentBroadcast: Started reading broadcast variable 4 with 1 pieces (estimated total size 4.0 MiB)
+20/11/17 21:38:38 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 434.4 MiB)
+20/11/17 21:38:38 INFO TorrentBroadcast: Reading broadcast variable 4 took 17 ms
+20/11/17 21:38:38 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 8.8 KiB, free 434.4 MiB)
+20/11/17 21:38:38 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22495 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:38 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22509 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:38 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22529 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:38 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22545 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:38 INFO KafkaConsumer: [Consumer clientId=consumer-spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor-1, groupId=spark-kafka-source-06219ebd-9fb8-40ef-abd3-92889f9a7013-1284358273-executor] Seeking to offset 22546 for partition record-cassandra-leaves-avro-0
+20/11/17 21:38:38 INFO DataWritingSparkTask: Commit denied for partition 0 (task 4, attempt 0, stage 4.0)
+20/11/17 21:38:38 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+20/11/17 21:38:38 ERROR Utils: Aborting task
+org.apache.spark.executor.CommitDeniedException: Commit denied for partition 0 (task 4, attempt 0, stage 4.0)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$7(WriteToDataSourceV2Exec.scala:456)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1411)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:477)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:385)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/17 21:38:38 ERROR DataWritingSparkTask: Aborting commit for partition 0 (task 4, attempt 0, stage 4.0)
+20/11/17 21:38:38 ERROR DataWritingSparkTask: Aborted commit for partition 0 (task 4, attempt 0, stage 4.0)
+

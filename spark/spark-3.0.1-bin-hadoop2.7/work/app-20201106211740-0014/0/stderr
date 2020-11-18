@@ -1,0 +1,64 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=43987" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca:43987" "--executor-id" "0" "--hostname" "10.8.3.37" "--cores" "5" "--app-id" "app-20201106211740-0014" "--worker-url" "spark://Worker@10.8.3.37:36683"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/06 21:17:41 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 80849@ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca
+20/11/06 21:17:41 INFO SignalUtils: Registered signal handler for TERM
+20/11/06 21:17:41 INFO SignalUtils: Registered signal handler for HUP
+20/11/06 21:17:41 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/06 21:17:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/06 21:17:42 INFO SecurityManager: Changing view acls to: gitpod
+20/11/06 21:17:42 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/06 21:17:42 INFO SecurityManager: Changing view acls groups to: 
+20/11/06 21:17:42 INFO SecurityManager: Changing modify acls groups to: 
+20/11/06 21:17:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/06 21:17:42 INFO TransportClientFactory: Successfully created connection to ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:43987 after 96 ms (0 ms spent in bootstraps)
+20/11/06 21:17:43 INFO SecurityManager: Changing view acls to: gitpod
+20/11/06 21:17:43 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/06 21:17:43 INFO SecurityManager: Changing view acls groups to: 
+20/11/06 21:17:43 INFO SecurityManager: Changing modify acls groups to: 
+20/11/06 21:17:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/06 21:17:43 INFO TransportClientFactory: Successfully created connection to ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:43987 after 5 ms (0 ms spent in bootstraps)
+20/11/06 21:17:43 INFO DiskBlockManager: Created local directory at /tmp/spark-405cca3e-2e0f-47e9-8c19-996387863b2f/executor-a4ee12bc-0ab8-4f56-bac6-9d4eef240221/blockmgr-3214386d-343e-411a-8f9b-b090171622c6
+20/11/06 21:17:43 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+20/11/06 21:19:43 ERROR TransportChannelHandler: Connection to ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:43987 has been quiet for 120000 ms while there are outstanding requests. Assuming connection is dead; please adjust spark.network.timeout if this is wrong.
+Exception in thread "main" 20/11/06 21:19:43 ERROR TransportResponseHandler: Still have 1 requests outstanding when connection from ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:43987 is closed
+java.lang.reflect.UndeclaredThrowableException
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1761)
+	at org.apache.spark.deploy.SparkHadoopUtil.runAsSparkUser(SparkHadoopUtil.scala:61)
+	at org.apache.spark.executor.CoarseGrainedExecutorBackend$.run(CoarseGrainedExecutorBackend.scala:283)
+	at org.apache.spark.executor.CoarseGrainedExecutorBackend$.main(CoarseGrainedExecutorBackend.scala:272)
+	at org.apache.spark.executor.CoarseGrainedExecutorBackend.main(CoarseGrainedExecutorBackend.scala)
+Caused by: org.apache.spark.rpc.RpcTimeoutException: Futures timed out after [120 seconds]. This timeout is controlled by spark.rpc.lookupTimeout
+	at org.apache.spark.rpc.RpcTimeout.org$apache$spark$rpc$RpcTimeout$$createRpcTimeoutException(RpcTimeout.scala:47)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:62)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:58)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:76)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:101)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:109)
+	at org.apache.spark.util.RpcUtils$.makeDriverRef(RpcUtils.scala:34)
+	at org.apache.spark.SparkEnv$.registerOrLookupEndpoint$1(SparkEnv.scala:313)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:414)
+	at org.apache.spark.SparkEnv$.createExecutorEnv(SparkEnv.scala:205)
+	at org.apache.spark.executor.CoarseGrainedExecutorBackend$.$anonfun$run$1(CoarseGrainedExecutorBackend.scala:332)
+	at org.apache.spark.deploy.SparkHadoopUtil$$anon$1.run(SparkHadoopUtil.scala:62)
+	at org.apache.spark.deploy.SparkHadoopUtil$$anon$1.run(SparkHadoopUtil.scala:61)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)
+	... 4 more
+Caused by: java.util.concurrent.TimeoutException: Futures timed out after [120 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:259)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:263)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:294)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	... 16 more
+20/11/06 21:19:43 INFO DiskBlockManager: Shutdown hook called
+20/11/06 21:19:43 INFO ShutdownHookManager: Shutdown hook called

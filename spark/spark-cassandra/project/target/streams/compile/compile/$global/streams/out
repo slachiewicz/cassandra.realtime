@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/workspace/cassandra.realtime/spark/spark-cassandra/project/Dependencies.scala:5:46: illegal character '\u201c'[0m
+[0m[[0m[31merror[0m] [0m[0m  lazy val sparkCore = "org.apache.spark" %% “spark-core” % "3.0.1"[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/workspace/cassandra.realtime/spark/spark-cassandra/project/Dependencies.scala:5:57: illegal character '\u201d'[0m
+[0m[[0m[31merror[0m] [0m[0m  lazy val sparkCore = "org.apache.spark" %% “spark-core” % "3.0.1"[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

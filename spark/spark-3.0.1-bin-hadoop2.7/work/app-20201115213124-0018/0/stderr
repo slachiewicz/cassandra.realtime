@@ -1,0 +1,220 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=44353" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353" "--executor-id" "0" "--hostname" "10.8.7.145" "--cores" "5" "--app-id" "app-20201115213124-0018" "--worker-url" "spark://Worker@10.8.7.145:38861"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/15 21:31:27 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 36718@ws-b8a36d83-41af-40e1-a58b-3cfc68940859
+20/11/15 21:31:27 INFO SignalUtils: Registered signal handler for TERM
+20/11/15 21:31:27 INFO SignalUtils: Registered signal handler for HUP
+20/11/15 21:31:27 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/15 21:31:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/15 21:31:28 INFO SecurityManager: Changing view acls to: gitpod
+20/11/15 21:31:28 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/15 21:31:28 INFO SecurityManager: Changing view acls groups to: 
+20/11/15 21:31:28 INFO SecurityManager: Changing modify acls groups to: 
+20/11/15 21:31:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/15 21:31:29 INFO TransportClientFactory: Successfully created connection to ws-b8a36d83-41af-40e1-a58b-3cfc68940859/10.8.7.145:44353 after 114 ms (0 ms spent in bootstraps)
+20/11/15 21:31:29 INFO SecurityManager: Changing view acls to: gitpod
+20/11/15 21:31:29 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/15 21:31:29 INFO SecurityManager: Changing view acls groups to: 
+20/11/15 21:31:29 INFO SecurityManager: Changing modify acls groups to: 
+20/11/15 21:31:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/15 21:31:29 INFO TransportClientFactory: Successfully created connection to ws-b8a36d83-41af-40e1-a58b-3cfc68940859/10.8.7.145:44353 after 5 ms (0 ms spent in bootstraps)
+20/11/15 21:31:29 INFO DiskBlockManager: Created local directory at /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/blockmgr-b6f45a9c-0c29-4db2-a2a8-8519eb3455d8
+20/11/15 21:31:29 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+20/11/15 21:31:30 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353
+20/11/15 21:31:30 INFO WorkerWatcher: Connecting to worker spark://Worker@10.8.7.145:38861
+20/11/15 21:31:30 INFO TransportClientFactory: Successfully created connection to /10.8.7.145:38861 after 8 ms (0 ms spent in bootstraps)
+20/11/15 21:31:30 INFO WorkerWatcher: Successfully connected to spark://Worker@10.8.7.145:38861
+20/11/15 21:31:30 INFO ResourceUtils: ==============================================================
+20/11/15 21:31:30 INFO ResourceUtils: Resources for spark.executor:
+
+20/11/15 21:31:30 INFO ResourceUtils: ==============================================================
+20/11/15 21:31:30 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/11/15 21:31:30 INFO Executor: Starting executor ID 0 on host 10.8.7.145
+20/11/15 21:31:30 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37595.
+20/11/15 21:31:30 INFO NettyBlockTransferService: Server created on 10.8.7.145:37595
+20/11/15 21:31:30 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/11/15 21:31:30 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 10.8.7.145, 37595, None)
+20/11/15 21:31:30 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 10.8.7.145, 37595, None)
+20/11/15 21:31:30 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 10.8.7.145, 37595, None)
+20/11/15 21:31:37 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+20/11/15 21:31:37 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/files/secure-connect-demo.zip with timestamp 1605475884368
+20/11/15 21:31:38 INFO TransportClientFactory: Successfully created connection to ws-b8a36d83-41af-40e1-a58b-3cfc68940859/10.8.7.145:44353 after 3 ms (0 ms spent in bootstraps)
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/files/secure-connect-demo.zip to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp6992995272688974913.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-11308598701605475884368_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./secure-connect-demo.zip
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.thoughtworks.paranamer_paranamer-2.8.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.thoughtworks.paranamer_paranamer-2.8.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp1309315641226096115.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/18592834131605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.thoughtworks.paranamer_paranamer-2.8.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.thoughtworks.paranamer_paranamer-2.8.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.apache.commons_commons-lang3-3.9.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.apache.commons_commons-lang3-3.9.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp1854683475679406748.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/20674279871605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.apache.commons_commons-lang3-3.9.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.apache.commons_commons-lang3-3.9.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.0.0.jar with timestamp 1605475884364
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.0.0.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp18323012244816227644.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/19959666471605475884364_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.spark_spark-cassandra-connector-driver_2.12-3.0.0.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.spark_spark-cassandra-connector-driver_2.12-3.0.0.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.typesafe_config-1.3.4.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.typesafe_config-1.3.4.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp6643867924897272995.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-20916930811605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.typesafe_config-1.3.4.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.typesafe_config-1.3.4.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.javatuples_javatuples-1.2.jar with timestamp 1605475884366
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.javatuples_javatuples-1.2.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp5951628915320113103.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-4008402481605475884366_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.javatuples_javatuples-1.2.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.javatuples_javatuples-1.2.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.0.0.jar with timestamp 1605475884363
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.0.0.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp14391036976205763679.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-21467442301605475884363_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.spark_spark-cassandra-connector_2.12-3.0.0.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.spark_spark-cassandra-connector_2.12-3.0.0.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_native-protocol-1.4.10.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_native-protocol-1.4.10.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp11688363378691466328.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-20059506091605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_native-protocol-1.4.10.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_native-protocol-1.4.10.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.google.code.findbugs_jsr305-3.0.2.jar with timestamp 1605475884366
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.google.code.findbugs_jsr305-3.0.2.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp6934263100353601321.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/2604826761605475884366_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.google.code.findbugs_jsr305-3.0.2.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.google.code.findbugs_jsr305-3.0.2.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_java-driver-mapper-runtime-4.7.2.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_java-driver-mapper-runtime-4.7.2.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp14323148995559144403.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-18696443001605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_java-driver-mapper-runtime-4.7.2.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_java-driver-mapper-runtime-4.7.2.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_java-driver-query-builder-4.7.2.jar with timestamp 1605475884366
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_java-driver-query-builder-4.7.2.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp7858512472815068448.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/11645234721605475884366_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_java-driver-query-builder-4.7.2.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_java-driver-query-builder-4.7.2.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.slf4j_slf4j-api-1.7.26.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.slf4j_slf4j-api-1.7.26.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp17908097272796976685.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-13142648221605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.slf4j_slf4j-api-1.7.26.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.slf4j_slf4j-api-1.7.26.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.reactivestreams_reactive-streams-1.0.2.jar with timestamp 1605475884366
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.reactivestreams_reactive-streams-1.0.2.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp17658548236820059729.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/14656073031605475884366_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.reactivestreams_reactive-streams-1.0.2.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.reactivestreams_reactive-streams-1.0.2.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/io.dropwizard.metrics_metrics-core-4.0.5.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/io.dropwizard.metrics_metrics-core-4.0.5.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp17390148161792405184.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-18590671201605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./io.dropwizard.metrics_metrics-core-4.0.5.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./io.dropwizard.metrics_metrics-core-4.0.5.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar with timestamp 1605475884366
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp10456758281597695490.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/10267419771605475884366_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.github.spotbugs_spotbugs-annotations-3.1.12.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.github.spotbugs_spotbugs-annotations-3.1.12.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_java-driver-core-shaded-4.7.2.jar with timestamp 1605475884364
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_java-driver-core-shaded-4.7.2.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp16135196976113973101.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-18239299851605475884364_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_java-driver-core-shaded-4.7.2.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_java-driver-core-shaded-4.7.2.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/spark-cassandra_2.12-0.1.0-SNAPSHOT.jar with timestamp 1605475884366
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/spark-cassandra_2.12-0.1.0-SNAPSHOT.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp4662407101228497813.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-11065263201605475884366_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./spark-cassandra_2.12-0.1.0-SNAPSHOT.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./spark-cassandra_2.12-0.1.0-SNAPSHOT.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.scala-lang_scala-reflect-2.12.11.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.scala-lang_scala-reflect-2.12.11.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp11219085100371641124.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-20934602151605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.scala-lang_scala-reflect-2.12.11.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.scala-lang_scala-reflect-2.12.11.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.hdrhistogram_HdrHistogram-2.1.11.jar with timestamp 1605475884366
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/org.hdrhistogram_HdrHistogram-2.1.11.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp12506641866427885230.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/18775131201605475884366_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.hdrhistogram_HdrHistogram-2.1.11.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./org.hdrhistogram_HdrHistogram-2.1.11.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar with timestamp 1605475884365
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp13514898323676604898.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/-8590656201605475884365_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar to class loader
+20/11/15 21:31:38 INFO Executor: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar with timestamp 1605475884366
+20/11/15 21:31:38 INFO Utils: Fetching spark://ws-b8a36d83-41af-40e1-a58b-3cfc68940859:44353/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar to /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/fetchFileTemp7424557071054150934.tmp
+20/11/15 21:31:38 INFO Utils: Copying /tmp/spark-451ce8e9-51e2-4ce1-825c-dc330b5f1a9f/executor-2b076e97-7848-4345-81f2-c7f892022d69/spark-c28f58db-9496-4b1e-add7-b148f5142f58/19081983291605475884366_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.github.stephenc.jcip_jcip-annotations-1.0-1.jar
+20/11/15 21:31:38 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./com.github.stephenc.jcip_jcip-annotations-1.0-1.jar to class loader
+20/11/15 21:31:38 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+20/11/15 21:31:38 INFO TransportClientFactory: Successfully created connection to ws-b8a36d83-41af-40e1-a58b-3cfc68940859/10.8.7.145:44175 after 3 ms (0 ms spent in bootstraps)
+20/11/15 21:31:38 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 9.0 KiB, free 434.4 MiB)
+20/11/15 21:31:38 INFO TorrentBroadcast: Reading broadcast variable 0 took 179 ms
+20/11/15 21:31:38 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 20.9 KiB, free 434.4 MiB)
+20/11/15 21:31:39 INFO CodeGenerator: Code generated in 238.933818 ms
+20/11/15 21:31:39 INFO CodeGenerator: Code generated in 17.043219 ms
+20/11/15 21:31:39 INFO CodeGenerator: Code generated in 13.777055 ms
+20/11/15 21:31:40 INFO CodeGenerator: Code generated in 16.437238 ms
+20/11/15 21:31:41 INFO CassandraConnectionFactory: Found the secure-connect-demo.zip locally at /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201115213124-0018/0/./secure-connect-demo.zip, using this local file.
+20/11/15 21:31:42 INFO DefaultMavenCoordinates: DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core-shaded) version 4.7.2
+20/11/15 21:31:42 INFO InternalDriverContext: Could not register Graph extensions; this is normal if Tinkerpop was explicitly excluded from classpath
+20/11/15 21:31:42 INFO Native: Unable to load JNR native implementation. This could be normal if JNR is excluded from the classpath
+java.lang.NoClassDefFoundError: jnr/posix/POSIXHandler
+	at com.datastax.oss.driver.internal.core.os.Native$LibcLoader.load(Native.java:42)
+	at com.datastax.oss.driver.internal.core.os.Native.<clinit>(Native.java:59)
+	at com.datastax.oss.driver.internal.core.time.Clock.getInstance(Clock.java:34)
+	at com.datastax.oss.driver.internal.core.time.MonotonicTimestampGenerator.buildClock(MonotonicTimestampGenerator.java:109)
+	at com.datastax.oss.driver.internal.core.time.MonotonicTimestampGenerator.<init>(MonotonicTimestampGenerator.java:43)
+	at com.datastax.oss.driver.internal.core.time.AtomicTimestampGenerator.<init>(AtomicTimestampGenerator.java:52)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.datastax.oss.driver.internal.core.util.Reflection.buildFromConfig(Reflection.java:246)
+	at com.datastax.oss.driver.internal.core.util.Reflection.buildFromConfig(Reflection.java:108)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.buildTimestampGenerator(DefaultDriverContext.java:368)
+	at com.datastax.oss.driver.internal.core.util.concurrent.LazyReference.get(LazyReference.java:55)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.getTimestampGenerator(DefaultDriverContext.java:743)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession$SingleThreaded.init(DefaultSession.java:349)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession$SingleThreaded.access$1100(DefaultSession.java:300)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.lambda$init$0(DefaultSession.java:146)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.PromiseTask.run(PromiseTask.java:106)
+	at com.datastax.oss.driver.shaded.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:54)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at com.datastax.oss.driver.shaded.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: jnr.posix.POSIXHandler
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 25 more
+20/11/15 21:31:42 INFO Clock: Could not access native clock (see debug logs for details), falling back to Java system clock
+20/11/15 21:31:46 INFO CassandraConnector: Connected to Cassandra cluster.
+20/11/15 21:31:46 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1557 bytes result sent to driver
+20/11/15 21:31:46 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+20/11/15 21:31:46 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+20/11/15 21:31:46 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+20/11/15 21:31:46 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+20/11/15 21:31:46 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+20/11/15 21:31:46 INFO CoarseGrainedExecutorBackend: Got assigned task 4
+20/11/15 21:31:46 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+20/11/15 21:31:46 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+20/11/15 21:31:46 INFO TorrentBroadcast: Started reading broadcast variable 1 with 1 pieces (estimated total size 4.0 MiB)
+20/11/15 21:31:46 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 9.0 KiB, free 434.4 MiB)
+20/11/15 21:31:46 INFO TorrentBroadcast: Reading broadcast variable 1 took 22 ms
+20/11/15 21:31:46 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 20.9 KiB, free 434.4 MiB)
+20/11/15 21:31:46 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 1514 bytes result sent to driver
+20/11/15 21:31:47 INFO CodeGenerator: Code generated in 18.099899 ms
+20/11/15 21:31:47 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 1745 bytes result sent to driver
+20/11/15 21:31:47 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1920 bytes result sent to driver
+20/11/15 21:31:47 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 1865 bytes result sent to driver
+20/11/15 21:31:47 INFO CoarseGrainedExecutorBackend: Got assigned task 5
+20/11/15 21:31:47 INFO Executor: Running task 0.0 in stage 2.0 (TID 5)
+20/11/15 21:31:47 INFO CoarseGrainedExecutorBackend: Got assigned task 6
+20/11/15 21:31:47 INFO Executor: Running task 1.0 in stage 2.0 (TID 6)
+20/11/15 21:31:47 INFO CoarseGrainedExecutorBackend: Got assigned task 7
+20/11/15 21:31:47 INFO Executor: Running task 2.0 in stage 2.0 (TID 7)
+20/11/15 21:31:47 INFO CoarseGrainedExecutorBackend: Got assigned task 8
+20/11/15 21:31:47 INFO Executor: Running task 3.0 in stage 2.0 (TID 8)
+20/11/15 21:31:47 INFO CoarseGrainedExecutorBackend: Got assigned task 9
+20/11/15 21:31:47 INFO TorrentBroadcast: Started reading broadcast variable 2 with 1 pieces (estimated total size 4.0 MiB)
+20/11/15 21:31:47 INFO Executor: Running task 4.0 in stage 2.0 (TID 9)
+20/11/15 21:31:47 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 9.0 KiB, free 434.4 MiB)
+20/11/15 21:31:47 INFO TorrentBroadcast: Reading broadcast variable 2 took 16 ms
+20/11/15 21:31:47 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 20.9 KiB, free 434.4 MiB)
+20/11/15 21:31:47 INFO Executor: Finished task 0.0 in stage 2.0 (TID 5). 1514 bytes result sent to driver
+20/11/15 21:31:47 INFO Executor: Finished task 4.0 in stage 2.0 (TID 9). 1796 bytes result sent to driver
+20/11/15 21:31:47 INFO Executor: Finished task 1.0 in stage 2.0 (TID 6). 1723 bytes result sent to driver
+20/11/15 21:31:47 INFO Executor: Finished task 2.0 in stage 2.0 (TID 7). 1725 bytes result sent to driver
+20/11/15 21:31:47 INFO Executor: Finished task 3.0 in stage 2.0 (TID 8). 1705 bytes result sent to driver
+20/11/15 21:31:47 INFO CoarseGrainedExecutorBackend: Got assigned task 10
+20/11/15 21:31:47 INFO Executor: Running task 5.0 in stage 2.0 (TID 10)
+20/11/15 21:31:47 INFO Executor: Finished task 5.0 in stage 2.0 (TID 10). 1730 bytes result sent to driver
+20/11/15 21:31:47 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+20/11/15 21:31:47 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+tdown

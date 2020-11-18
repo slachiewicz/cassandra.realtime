@@ -1,0 +1,291 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Spark Command: /home/gitpod/.sdkman/candidates/java/current/bin/java -cp /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://ws-fe610c02-c570-4476-a579-66d8510a7307:7077
+========================================
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/13 18:28:36 INFO Worker: Started daemon with process name: 7526@ws-fe610c02-c570-4476-a579-66d8510a7307
+20/11/13 18:28:36 INFO SignalUtils: Registered signal handler for TERM
+20/11/13 18:28:36 INFO SignalUtils: Registered signal handler for HUP
+20/11/13 18:28:36 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/13 18:28:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/13 18:28:36 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 18:28:36 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 18:28:36 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 18:28:36 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 18:28:36 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 18:28:37 INFO Utils: Successfully started service 'sparkWorker' on port 38885.
+20/11/13 18:28:37 INFO Worker: Starting Spark worker 10.8.7.211:38885 with 5 cores, 58.0 GiB RAM
+20/11/13 18:28:37 INFO Worker: Running Spark version 3.0.1
+20/11/13 18:28:37 INFO Worker: Spark home: /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7
+20/11/13 18:28:37 INFO ResourceUtils: ==============================================================
+20/11/13 18:28:37 INFO ResourceUtils: Resources for spark.worker:
+
+20/11/13 18:28:37 INFO ResourceUtils: ==============================================================
+20/11/13 18:28:37 WARN Utils: Service 'WorkerUI' could not bind on port 8081. Attempting port 8082.
+20/11/13 18:28:37 WARN Utils: Service 'WorkerUI' could not bind on port 8082. Attempting port 8083.
+20/11/13 18:28:37 WARN Utils: Service 'WorkerUI' could not bind on port 8083. Attempting port 8084.
+20/11/13 18:28:37 INFO Utils: Successfully started service 'WorkerUI' on port 8084.
+20/11/13 18:28:37 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://ws-fe610c02-c570-4476-a579-66d8510a7307:8084
+20/11/13 18:28:37 INFO Worker: Connecting to master ws-fe610c02-c570-4476-a579-66d8510a7307:7077...
+20/11/13 18:28:38 INFO TransportClientFactory: Successfully created connection to ws-fe610c02-c570-4476-a579-66d8510a7307/10.8.7.211:7077 after 50 ms (0 ms spent in bootstraps)
+20/11/13 18:28:38 INFO Worker: Successfully registered with master spark://ws-fe610c02-c570-4476-a579-66d8510a7307:7077
+20/11/13 18:44:24 INFO Worker: Asked to launch executor app-20201113184424-0000/0 for Leaves
+20/11/13 18:44:24 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 18:44:24 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 18:44:24 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 18:44:24 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 18:44:24 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 18:44:24 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=44385" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:44385" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113184424-0000" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 18:44:43 INFO Worker: Asked to kill executor app-20201113184424-0000/0
+20/11/13 18:44:43 INFO ExecutorRunner: Runner thread for executor app-20201113184424-0000/0 interrupted
+20/11/13 18:44:43 INFO ExecutorRunner: Killing process!
+20/11/13 18:44:43 INFO Worker: Executor app-20201113184424-0000/0 finished with state KILLED exitStatus 0
+20/11/13 18:44:43 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 18:44:43 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113184424-0000, execId=0)
+20/11/13 18:44:43 INFO Worker: Cleaning up local directories for application app-20201113184424-0000
+20/11/13 18:44:43 INFO ExternalShuffleBlockResolver: Application app-20201113184424-0000 removed, cleanupLocalDirs = true
+20/11/13 18:49:46 INFO Worker: Asked to launch executor app-20201113184946-0001/0 for Leaves
+20/11/13 18:49:46 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 18:49:46 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 18:49:46 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 18:49:46 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 18:49:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 18:49:46 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=38503" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:38503" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113184946-0001" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 18:54:57 INFO Worker: Asked to kill executor app-20201113184946-0001/0
+20/11/13 18:54:57 INFO ExecutorRunner: Runner thread for executor app-20201113184946-0001/0 interrupted
+20/11/13 18:54:57 INFO ExecutorRunner: Killing process!
+20/11/13 18:55:07 INFO Worker: Executor app-20201113184946-0001/0 finished with state KILLED exitStatus 137
+20/11/13 18:55:07 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 18:55:07 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113184946-0001, execId=0)
+20/11/13 18:55:07 INFO ExternalShuffleBlockResolver: Application app-20201113184946-0001 removed, cleanupLocalDirs = true
+20/11/13 18:55:07 INFO Worker: Cleaning up local directories for application app-20201113184946-0001
+20/11/13 19:02:02 INFO Worker: Asked to launch executor app-20201113190202-0002/0 for Leaves
+20/11/13 19:02:02 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 19:02:02 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 19:02:02 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 19:02:02 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 19:02:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 19:02:02 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=36263" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:36263" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113190202-0002" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 19:02:21 INFO Worker: Asked to kill executor app-20201113190202-0002/0
+20/11/13 19:02:21 INFO ExecutorRunner: Runner thread for executor app-20201113190202-0002/0 interrupted
+20/11/13 19:02:21 INFO ExecutorRunner: Killing process!
+20/11/13 19:02:21 INFO Worker: Executor app-20201113190202-0002/0 finished with state KILLED exitStatus 143
+20/11/13 19:02:21 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 19:02:21 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113190202-0002, execId=0)
+20/11/13 19:02:21 INFO ExternalShuffleBlockResolver: Application app-20201113190202-0002 removed, cleanupLocalDirs = true
+20/11/13 19:02:21 INFO Worker: Cleaning up local directories for application app-20201113190202-0002
+20/11/13 19:06:00 INFO Worker: Asked to launch executor app-20201113190600-0003/0 for Leaves
+20/11/13 19:06:00 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 19:06:00 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 19:06:00 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 19:06:00 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 19:06:00 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 19:06:00 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=39717" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:39717" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113190600-0003" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 19:06:19 INFO Worker: Asked to kill executor app-20201113190600-0003/0
+20/11/13 19:06:19 INFO ExecutorRunner: Runner thread for executor app-20201113190600-0003/0 interrupted
+20/11/13 19:06:19 INFO ExecutorRunner: Killing process!
+20/11/13 19:06:19 INFO Worker: Executor app-20201113190600-0003/0 finished with state KILLED exitStatus 143
+20/11/13 19:06:19 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 19:06:19 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113190600-0003, execId=0)
+20/11/13 19:06:19 INFO ExternalShuffleBlockResolver: Application app-20201113190600-0003 removed, cleanupLocalDirs = true
+20/11/13 19:06:19 INFO Worker: Cleaning up local directories for application app-20201113190600-0003
+20/11/13 19:28:00 INFO Worker: Asked to launch executor app-20201113192800-0004/0 for Leaves
+20/11/13 19:28:00 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 19:28:00 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 19:28:00 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 19:28:00 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 19:28:00 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 19:28:00 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=43299" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:43299" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113192800-0004" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 19:28:17 INFO Worker: Asked to kill executor app-20201113192800-0004/0
+20/11/13 19:28:17 INFO ExecutorRunner: Runner thread for executor app-20201113192800-0004/0 interrupted
+20/11/13 19:28:18 INFO ExecutorRunner: Killing process!
+20/11/13 19:28:18 INFO Worker: Executor app-20201113192800-0004/0 finished with state KILLED exitStatus 143
+20/11/13 19:28:18 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 19:28:18 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113192800-0004, execId=0)
+20/11/13 19:28:18 INFO ExternalShuffleBlockResolver: Application app-20201113192800-0004 removed, cleanupLocalDirs = true
+20/11/13 19:28:18 INFO Worker: Cleaning up local directories for application app-20201113192800-0004
+20/11/13 19:30:07 INFO Worker: Asked to launch executor app-20201113193007-0005/0 for Leaves
+20/11/13 19:30:07 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 19:30:07 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 19:30:07 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 19:30:07 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 19:30:07 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 19:30:07 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=38001" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:38001" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113193007-0005" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 19:30:26 INFO Worker: Asked to kill executor app-20201113193007-0005/0
+20/11/13 19:30:26 INFO ExecutorRunner: Runner thread for executor app-20201113193007-0005/0 interrupted
+20/11/13 19:30:26 INFO ExecutorRunner: Killing process!
+20/11/13 19:30:26 INFO Worker: Executor app-20201113193007-0005/0 finished with state KILLED exitStatus 143
+20/11/13 19:30:26 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 19:30:26 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113193007-0005, execId=0)
+20/11/13 19:30:26 INFO ExternalShuffleBlockResolver: Application app-20201113193007-0005 removed, cleanupLocalDirs = true
+20/11/13 19:30:26 INFO Worker: Cleaning up local directories for application app-20201113193007-0005
+20/11/13 19:35:05 INFO Worker: Asked to launch executor app-20201113193505-0006/0 for Leaves
+20/11/13 19:35:05 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 19:35:05 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 19:35:05 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 19:35:05 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 19:35:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 19:35:05 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=41979" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:41979" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113193505-0006" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 19:35:23 INFO Worker: Asked to kill executor app-20201113193505-0006/0
+20/11/13 19:35:23 INFO ExecutorRunner: Runner thread for executor app-20201113193505-0006/0 interrupted
+20/11/13 19:35:23 INFO ExecutorRunner: Killing process!
+20/11/13 19:35:23 INFO Worker: Executor app-20201113193505-0006/0 finished with state KILLED exitStatus 143
+20/11/13 19:35:23 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 19:35:23 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113193505-0006, execId=0)
+20/11/13 19:35:23 INFO ExternalShuffleBlockResolver: Application app-20201113193505-0006 removed, cleanupLocalDirs = true
+20/11/13 19:35:23 INFO Worker: Cleaning up local directories for application app-20201113193505-0006
+20/11/13 19:39:24 INFO Worker: Asked to launch executor app-20201113193924-0007/0 for Leaves
+20/11/13 19:39:24 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 19:39:24 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 19:39:24 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 19:39:24 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 19:39:24 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 19:39:24 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=43445" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:43445" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113193924-0007" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 19:39:42 INFO Worker: Asked to kill executor app-20201113193924-0007/0
+20/11/13 19:39:42 INFO ExecutorRunner: Runner thread for executor app-20201113193924-0007/0 interrupted
+20/11/13 19:39:42 INFO ExecutorRunner: Killing process!
+20/11/13 19:39:43 INFO Worker: Executor app-20201113193924-0007/0 finished with state KILLED exitStatus 143
+20/11/13 19:39:43 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 19:39:43 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113193924-0007, execId=0)
+20/11/13 19:39:43 INFO ExternalShuffleBlockResolver: Application app-20201113193924-0007 removed, cleanupLocalDirs = true
+20/11/13 19:39:43 INFO Worker: Cleaning up local directories for application app-20201113193924-0007
+20/11/13 19:40:43 INFO Worker: Asked to launch executor app-20201113194043-0008/0 for Leaves
+20/11/13 19:40:43 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 19:40:43 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 19:40:43 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 19:40:43 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 19:40:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 19:40:43 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=44951" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:44951" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113194043-0008" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 19:41:02 INFO Worker: Asked to kill executor app-20201113194043-0008/0
+20/11/13 19:41:02 INFO ExecutorRunner: Runner thread for executor app-20201113194043-0008/0 interrupted
+20/11/13 19:41:02 INFO ExecutorRunner: Killing process!
+20/11/13 19:41:02 INFO Worker: Executor app-20201113194043-0008/0 finished with state KILLED exitStatus 143
+20/11/13 19:41:02 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 19:41:02 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113194043-0008, execId=0)
+20/11/13 19:41:02 INFO ExternalShuffleBlockResolver: Application app-20201113194043-0008 removed, cleanupLocalDirs = true
+20/11/13 19:41:02 INFO Worker: Cleaning up local directories for application app-20201113194043-0008
+20/11/13 19:47:44 INFO Worker: Asked to launch executor app-20201113194744-0009/0 for Leaves
+20/11/13 19:47:44 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 19:47:44 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 19:47:44 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 19:47:44 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 19:47:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 19:47:44 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=42665" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:42665" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "3" "--app-id" "app-20201113194744-0009" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 19:48:02 INFO Worker: Asked to kill executor app-20201113194744-0009/0
+20/11/13 19:48:02 INFO ExecutorRunner: Runner thread for executor app-20201113194744-0009/0 interrupted
+20/11/13 19:48:02 INFO ExecutorRunner: Killing process!
+20/11/13 19:48:03 INFO Worker: Executor app-20201113194744-0009/0 finished with state KILLED exitStatus 143
+20/11/13 19:48:03 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 19:48:03 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113194744-0009, execId=0)
+20/11/13 19:48:03 INFO ExternalShuffleBlockResolver: Application app-20201113194744-0009 removed, cleanupLocalDirs = true
+20/11/13 19:48:03 INFO Worker: Cleaning up local directories for application app-20201113194744-0009
+20/11/13 21:18:51 INFO Worker: Asked to launch executor app-20201113211851-0010/0 for Leaves
+20/11/13 21:18:51 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:18:51 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:18:51 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:18:51 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:18:51 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:18:51 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=45001" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:45001" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113211851-0010" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 21:19:01 INFO Worker: Asked to kill executor app-20201113211851-0010/0
+20/11/13 21:19:01 INFO ExecutorRunner: Runner thread for executor app-20201113211851-0010/0 interrupted
+20/11/13 21:19:01 INFO ExecutorRunner: Killing process!
+20/11/13 21:19:01 INFO Worker: Executor app-20201113211851-0010/0 finished with state KILLED exitStatus 143
+20/11/13 21:19:01 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 21:19:01 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113211851-0010, execId=0)
+20/11/13 21:19:01 INFO ExternalShuffleBlockResolver: Application app-20201113211851-0010 removed, cleanupLocalDirs = true
+20/11/13 21:19:01 INFO Worker: Cleaning up local directories for application app-20201113211851-0010
+20/11/13 21:19:56 INFO Worker: Asked to launch executor app-20201113211956-0011/0 for Leaves
+20/11/13 21:19:56 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:19:56 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:19:56 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:19:56 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:19:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:19:56 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=35841" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:35841" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113211956-0011" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 21:20:20 INFO Worker: Asked to kill executor app-20201113211956-0011/0
+20/11/13 21:20:20 INFO ExecutorRunner: Runner thread for executor app-20201113211956-0011/0 interrupted
+20/11/13 21:20:20 INFO ExecutorRunner: Killing process!
+20/11/13 21:20:20 INFO Worker: Executor app-20201113211956-0011/0 finished with state KILLED exitStatus 143
+20/11/13 21:20:20 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 21:20:20 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113211956-0011, execId=0)
+20/11/13 21:20:20 INFO ExternalShuffleBlockResolver: Application app-20201113211956-0011 removed, cleanupLocalDirs = true
+20/11/13 21:20:20 INFO Worker: Cleaning up local directories for application app-20201113211956-0011
+20/11/13 21:22:33 INFO Worker: Asked to launch executor app-20201113212233-0012/0 for Leaves
+20/11/13 21:22:33 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:22:33 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:22:33 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:22:33 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:22:33 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:22:33 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=37817" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:37817" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113212233-0012" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 21:22:56 INFO Worker: Asked to kill executor app-20201113212233-0012/0
+20/11/13 21:22:56 INFO ExecutorRunner: Runner thread for executor app-20201113212233-0012/0 interrupted
+20/11/13 21:22:56 INFO ExecutorRunner: Killing process!
+20/11/13 21:22:56 INFO Worker: Executor app-20201113212233-0012/0 finished with state KILLED exitStatus 143
+20/11/13 21:22:56 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 21:22:56 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113212233-0012, execId=0)
+20/11/13 21:22:56 INFO ExternalShuffleBlockResolver: Application app-20201113212233-0012 removed, cleanupLocalDirs = true
+20/11/13 21:22:56 INFO Worker: Cleaning up local directories for application app-20201113212233-0012
+20/11/13 21:24:19 INFO Worker: Asked to launch executor app-20201113212419-0013/0 for Leaves
+20/11/13 21:24:19 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:24:19 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:24:19 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:24:19 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:24:19 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:24:19 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=34017" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:34017" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113212419-0013" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 21:24:40 INFO Worker: Asked to kill executor app-20201113212419-0013/0
+20/11/13 21:24:40 INFO ExecutorRunner: Runner thread for executor app-20201113212419-0013/0 interrupted
+20/11/13 21:24:40 INFO ExecutorRunner: Killing process!
+20/11/13 21:24:41 INFO Worker: Executor app-20201113212419-0013/0 finished with state KILLED exitStatus 143
+20/11/13 21:24:41 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 21:24:41 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113212419-0013, execId=0)
+20/11/13 21:24:41 INFO ExternalShuffleBlockResolver: Application app-20201113212419-0013 removed, cleanupLocalDirs = true
+20/11/13 21:24:41 INFO Worker: Cleaning up local directories for application app-20201113212419-0013
+20/11/13 21:55:48 INFO Worker: Asked to launch executor app-20201113215548-0014/0 for Leaves
+20/11/13 21:55:48 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:55:48 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:55:48 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:55:48 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:55:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:55:48 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=34141" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:34141" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113215548-0014" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 21:56:12 INFO Worker: Asked to kill executor app-20201113215548-0014/0
+20/11/13 21:56:12 INFO ExecutorRunner: Runner thread for executor app-20201113215548-0014/0 interrupted
+20/11/13 21:56:12 INFO ExecutorRunner: Killing process!
+20/11/13 21:56:13 INFO Worker: Executor app-20201113215548-0014/0 finished with state KILLED exitStatus 143
+20/11/13 21:56:13 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 21:56:13 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113215548-0014, execId=0)
+20/11/13 21:56:13 INFO ExternalShuffleBlockResolver: Application app-20201113215548-0014 removed, cleanupLocalDirs = true
+20/11/13 21:56:13 INFO Worker: Cleaning up local directories for application app-20201113215548-0014
+20/11/13 21:57:42 INFO Worker: Asked to launch executor app-20201113215742-0015/0 for Leaves
+20/11/13 21:57:42 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:57:42 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:57:42 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:57:42 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:57:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:57:42 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=45051" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:45051" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113215742-0015" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 21:58:04 INFO Worker: Asked to kill executor app-20201113215742-0015/0
+20/11/13 21:58:04 INFO ExecutorRunner: Runner thread for executor app-20201113215742-0015/0 interrupted
+20/11/13 21:58:04 INFO ExecutorRunner: Killing process!
+20/11/13 21:58:05 INFO Worker: Executor app-20201113215742-0015/0 finished with state KILLED exitStatus 143
+20/11/13 21:58:05 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 21:58:05 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113215742-0015, execId=0)
+20/11/13 21:58:05 INFO Worker: Cleaning up local directories for application app-20201113215742-0015
+20/11/13 21:58:05 INFO ExternalShuffleBlockResolver: Application app-20201113215742-0015 removed, cleanupLocalDirs = true
+20/11/13 21:59:12 INFO Worker: Asked to launch executor app-20201113215912-0016/0 for Leaves
+20/11/13 21:59:12 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:59:12 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:59:12 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:59:12 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:59:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:59:12 INFO ExecutorRunner: Launch command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=44099" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:44099" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113215912-0016" "--worker-url" "spark://Worker@10.8.7.211:38885"
+20/11/13 21:59:33 INFO Worker: Asked to kill executor app-20201113215912-0016/0
+20/11/13 21:59:33 INFO ExecutorRunner: Runner thread for executor app-20201113215912-0016/0 interrupted
+20/11/13 21:59:33 INFO ExecutorRunner: Killing process!
+20/11/13 21:59:34 INFO Worker: Executor app-20201113215912-0016/0 finished with state KILLED exitStatus 143
+20/11/13 21:59:34 INFO ExternalShuffleBlockResolver: Clean up non-shuffle and non-RDD files associated with the finished executor 0
+20/11/13 21:59:34 INFO ExternalShuffleBlockResolver: Executor is not registered (appId=app-20201113215912-0016, execId=0)
+20/11/13 21:59:34 INFO ExternalShuffleBlockResolver: Application app-20201113215912-0016 removed, cleanupLocalDirs = true
+20/11/13 21:59:34 INFO Worker: Cleaning up local directories for application app-20201113215912-0016

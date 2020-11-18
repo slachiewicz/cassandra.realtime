@@ -1,0 +1,766 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=44099" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:44099" "--executor-id" "0" "--hostname" "10.8.7.211" "--cores" "5" "--app-id" "app-20201113215912-0016" "--worker-url" "spark://Worker@10.8.7.211:38885"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/13 21:59:14 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 59252@ws-fe610c02-c570-4476-a579-66d8510a7307
+20/11/13 21:59:14 INFO SignalUtils: Registered signal handler for TERM
+20/11/13 21:59:14 INFO SignalUtils: Registered signal handler for HUP
+20/11/13 21:59:14 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/13 21:59:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/13 21:59:15 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:59:15 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:59:15 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:59:15 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:59:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:59:15 INFO TransportClientFactory: Successfully created connection to ws-fe610c02-c570-4476-a579-66d8510a7307/10.8.7.211:44099 after 113 ms (0 ms spent in bootstraps)
+20/11/13 21:59:16 INFO SecurityManager: Changing view acls to: gitpod
+20/11/13 21:59:16 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/13 21:59:16 INFO SecurityManager: Changing view acls groups to: 
+20/11/13 21:59:16 INFO SecurityManager: Changing modify acls groups to: 
+20/11/13 21:59:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/13 21:59:16 INFO TransportClientFactory: Successfully created connection to ws-fe610c02-c570-4476-a579-66d8510a7307/10.8.7.211:44099 after 3 ms (0 ms spent in bootstraps)
+20/11/13 21:59:16 INFO DiskBlockManager: Created local directory at /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/blockmgr-841f43fe-64f9-4827-a08f-740ef1c1c5cf
+20/11/13 21:59:16 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+20/11/13 21:59:16 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ws-fe610c02-c570-4476-a579-66d8510a7307:44099
+20/11/13 21:59:16 INFO WorkerWatcher: Connecting to worker spark://Worker@10.8.7.211:38885
+20/11/13 21:59:16 INFO TransportClientFactory: Successfully created connection to /10.8.7.211:38885 after 4 ms (0 ms spent in bootstraps)
+20/11/13 21:59:16 INFO ResourceUtils: ==============================================================
+20/11/13 21:59:16 INFO WorkerWatcher: Successfully connected to spark://Worker@10.8.7.211:38885
+20/11/13 21:59:16 INFO ResourceUtils: Resources for spark.executor:
+
+20/11/13 21:59:16 INFO ResourceUtils: ==============================================================
+20/11/13 21:59:16 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/11/13 21:59:16 INFO Executor: Starting executor ID 0 on host 10.8.7.211
+20/11/13 21:59:16 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40257.
+20/11/13 21:59:16 INFO NettyBlockTransferService: Server created on 10.8.7.211:40257
+20/11/13 21:59:16 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/11/13 21:59:16 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 10.8.7.211, 40257, None)
+20/11/13 21:59:16 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 10.8.7.211, 40257, None)
+20/11/13 21:59:16 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 10.8.7.211, 40257, None)
+20/11/13 21:59:24 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+20/11/13 21:59:24 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+20/11/13 21:59:24 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+20/11/13 21:59:24 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+20/11/13 21:59:24 INFO CoarseGrainedExecutorBackend: Got assigned task 4
+20/11/13 21:59:24 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+20/11/13 21:59:24 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+20/11/13 21:59:24 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+20/11/13 21:59:24 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+20/11/13 21:59:24 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/files/secure-connect-demo.zip with timestamp 1605304752106
+20/11/13 21:59:24 INFO TransportClientFactory: Successfully created connection to ws-fe610c02-c570-4476-a579-66d8510a7307/10.8.7.211:44099 after 4 ms (0 ms spent in bootstraps)
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/files/secure-connect-demo.zip to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp9837943817548498631.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/3467824671605304752106_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./secure-connect-demo.zip
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_native-protocol-1.4.10.jar with timestamp 1605304752102
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_native-protocol-1.4.10.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp14651016502648199205.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-3270365621605304752102_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_native-protocol-1.4.10.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_native-protocol-1.4.10.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_java-driver-mapper-runtime-4.7.2.jar with timestamp 1605304752101
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_java-driver-mapper-runtime-4.7.2.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp10121802013915975295.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-16751991811605304752101_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_java-driver-mapper-runtime-4.7.2.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_java-driver-mapper-runtime-4.7.2.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.javatuples_javatuples-1.2.jar with timestamp 1605304752103
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.javatuples_javatuples-1.2.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp2086310861825362234.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-7923633851605304752103_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.javatuples_javatuples-1.2.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.javatuples_javatuples-1.2.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/io.dropwizard.metrics_metrics-core-4.0.5.jar with timestamp 1605304752103
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/io.dropwizard.metrics_metrics-core-4.0.5.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp3394957901342367796.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-13523392151605304752103_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./io.dropwizard.metrics_metrics-core-4.0.5.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./io.dropwizard.metrics_metrics-core-4.0.5.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.reactivestreams_reactive-streams-1.0.2.jar with timestamp 1605304752103
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.reactivestreams_reactive-streams-1.0.2.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp6274077840299510927.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-11951477361605304752103_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.reactivestreams_reactive-streams-1.0.2.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.reactivestreams_reactive-streams-1.0.2.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.google.code.findbugs_jsr305-3.0.2.jar with timestamp 1605304752104
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.google.code.findbugs_jsr305-3.0.2.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp16301845818362277613.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-19768739331605304752104_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.google.code.findbugs_jsr305-3.0.2.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.google.code.findbugs_jsr305-3.0.2.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar with timestamp 1605304752102
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp6630963635787563580.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/11806766211605304752102_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_java-driver-shaded-guava-25.1-jre-graal-sub-1.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar with timestamp 1605304752104
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.github.spotbugs_spotbugs-annotations-3.1.12.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp3241488397400797742.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/9509667441605304752104_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.github.spotbugs_spotbugs-annotations-3.1.12.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.github.spotbugs_spotbugs-annotations-3.1.12.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.typesafe_config-1.3.4.jar with timestamp 1605304752102
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.typesafe_config-1.3.4.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp10768926926455905868.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-19558993541605304752102_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.typesafe_config-1.3.4.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.typesafe_config-1.3.4.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.hdrhistogram_HdrHistogram-2.1.11.jar with timestamp 1605304752103
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.hdrhistogram_HdrHistogram-2.1.11.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp4886675449254848590.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/5584143371605304752103_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.hdrhistogram_HdrHistogram-2.1.11.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.hdrhistogram_HdrHistogram-2.1.11.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.thoughtworks.paranamer_paranamer-2.8.jar with timestamp 1605304752102
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.thoughtworks.paranamer_paranamer-2.8.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp5742844067966320131.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-19289559781605304752102_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.thoughtworks.paranamer_paranamer-2.8.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.thoughtworks.paranamer_paranamer-2.8.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.scala-lang_scala-reflect-2.12.11.jar with timestamp 1605304752102
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.scala-lang_scala-reflect-2.12.11.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp17619070655797135400.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/8824082981605304752102_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.scala-lang_scala-reflect-2.12.11.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.scala-lang_scala-reflect-2.12.11.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar with timestamp 1605304752104
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.github.stephenc.jcip_jcip-annotations-1.0-1.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp358106261885055222.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/18324230961605304752104_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.github.stephenc.jcip_jcip-annotations-1.0-1.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.github.stephenc.jcip_jcip-annotations-1.0-1.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.0.0.jar with timestamp 1605304752100
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.spark_spark-cassandra-connector_2.12-3.0.0.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp17631122711179055238.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/15571098491605304752100_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.spark_spark-cassandra-connector_2.12-3.0.0.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.spark_spark-cassandra-connector_2.12-3.0.0.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.slf4j_slf4j-api-1.7.26.jar with timestamp 1605304752103
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.slf4j_slf4j-api-1.7.26.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp15408462151403167292.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-13996265811605304752103_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.slf4j_slf4j-api-1.7.26.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.slf4j_slf4j-api-1.7.26.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_java-driver-core-shaded-4.7.2.jar with timestamp 1605304752101
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_java-driver-core-shaded-4.7.2.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp17460673927046572787.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/17758562881605304752101_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_java-driver-core-shaded-4.7.2.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_java-driver-core-shaded-4.7.2.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.apache.commons_commons-lang3-3.9.jar with timestamp 1605304752101
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/org.apache.commons_commons-lang3-3.9.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp5535739636129918696.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/7483292041605304752101_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.apache.commons_commons-lang3-3.9.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./org.apache.commons_commons-lang3-3.9.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/spark-cassandra_2.12-0.1.0-SNAPSHOT.jar with timestamp 1605304752104
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/spark-cassandra_2.12-0.1.0-SNAPSHOT.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp7760126597213480402.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-4563412331605304752104_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./spark-cassandra_2.12-0.1.0-SNAPSHOT.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./spark-cassandra_2.12-0.1.0-SNAPSHOT.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.0.0.jar with timestamp 1605304752101
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.spark_spark-cassandra-connector-driver_2.12-3.0.0.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp14274574571670017116.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-2592584081605304752101_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.spark_spark-cassandra-connector-driver_2.12-3.0.0.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.spark_spark-cassandra-connector-driver_2.12-3.0.0.jar to class loader
+20/11/13 21:59:24 INFO Executor: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_java-driver-query-builder-4.7.2.jar with timestamp 1605304752104
+20/11/13 21:59:24 INFO Utils: Fetching spark://ws-fe610c02-c570-4476-a579-66d8510a7307:44099/jars/com.datastax.oss_java-driver-query-builder-4.7.2.jar to /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/fetchFileTemp12639702863656116649.tmp
+20/11/13 21:59:24 INFO Utils: Copying /tmp/spark-db055cf6-dc24-407b-9c37-25dac12948f3/executor-00e51c58-4aa8-4e1b-aa2f-b9d67b2df6cb/spark-681ddcfe-1590-4076-92e6-ef7174d8dbdf/-11845087511605304752104_cache to /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_java-driver-query-builder-4.7.2.jar
+20/11/13 21:59:24 INFO Executor: Adding file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./com.datastax.oss_java-driver-query-builder-4.7.2.jar to class loader
+20/11/13 21:59:25 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+20/11/13 21:59:25 INFO TransportClientFactory: Successfully created connection to ws-fe610c02-c570-4476-a579-66d8510a7307/10.8.7.211:44041 after 3 ms (0 ms spent in bootstraps)
+20/11/13 21:59:25 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 8.9 KiB, free 434.4 MiB)
+20/11/13 21:59:25 INFO TorrentBroadcast: Reading broadcast variable 0 took 173 ms
+20/11/13 21:59:25 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 20.8 KiB, free 434.4 MiB)
+20/11/13 21:59:26 INFO CodeGenerator: Code generated in 278.52636 ms
+20/11/13 21:59:27 INFO CassandraConnectionFactory: Found the secure-connect-demo.zip locally at /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/work/app-20201113215912-0016/0/./secure-connect-demo.zip, using this local file.
+20/11/13 21:59:29 INFO DefaultMavenCoordinates: DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core-shaded) version 4.7.2
+20/11/13 21:59:29 INFO InternalDriverContext: Could not register Graph extensions; this is normal if Tinkerpop was explicitly excluded from classpath
+20/11/13 21:59:29 INFO Native: Unable to load JNR native implementation. This could be normal if JNR is excluded from the classpath
+java.lang.NoClassDefFoundError: jnr/posix/POSIXHandler
+	at com.datastax.oss.driver.internal.core.os.Native$LibcLoader.load(Native.java:42)
+	at com.datastax.oss.driver.internal.core.os.Native.<clinit>(Native.java:59)
+	at com.datastax.oss.driver.internal.core.time.Clock.getInstance(Clock.java:34)
+	at com.datastax.oss.driver.internal.core.time.MonotonicTimestampGenerator.buildClock(MonotonicTimestampGenerator.java:109)
+	at com.datastax.oss.driver.internal.core.time.MonotonicTimestampGenerator.<init>(MonotonicTimestampGenerator.java:43)
+	at com.datastax.oss.driver.internal.core.time.AtomicTimestampGenerator.<init>(AtomicTimestampGenerator.java:52)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.datastax.oss.driver.internal.core.util.Reflection.buildFromConfig(Reflection.java:246)
+	at com.datastax.oss.driver.internal.core.util.Reflection.buildFromConfig(Reflection.java:108)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.buildTimestampGenerator(DefaultDriverContext.java:368)
+	at com.datastax.oss.driver.internal.core.util.concurrent.LazyReference.get(LazyReference.java:55)
+	at com.datastax.oss.driver.internal.core.context.DefaultDriverContext.getTimestampGenerator(DefaultDriverContext.java:743)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession$SingleThreaded.init(DefaultSession.java:349)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession$SingleThreaded.access$1100(DefaultSession.java:300)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.lambda$init$0(DefaultSession.java:146)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.PromiseTask.run(PromiseTask.java:106)
+	at com.datastax.oss.driver.shaded.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:54)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at com.datastax.oss.driver.shaded.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at com.datastax.oss.driver.shaded.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: jnr.posix.POSIXHandler
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 25 more
+20/11/13 21:59:29 INFO Clock: Could not access native clock (see debug logs for details), falling back to Java system clock
+20/11/13 21:59:32 INFO CassandraConnector: Connected to Cassandra cluster.
+20/11/13 21:59:33 ERROR Executor: Exception in task 2.0 in stage 0.0 (TID 2)
+java.io.IOException: Invalid request, too many continuous paging sessions are already running: 2. This error may be intermittent, if there are other applications using continuous paging wait for them to finish and re-execute. If the error persists adjust your DSE server setting `continuous_paging.max_concurrent_sessions` or lower the parallelism level of this job (reduce the number of executors and/or assigned cores) or disable continuous paging for this app with spark.dse.continuousPagingEnabled.
+	at com.datastax.bdp.spark.ContinuousPagingScanner.scan(ContinuousPagingScanner.scala:108)
+	at com.datastax.spark.connector.datasource.ScanHelper$.fetchTokenRange(ScanHelper.scala:79)
+	at com.datastax.spark.connector.datasource.CassandraPartitionReaderBase.$anonfun$getIterator$1(CassandraScanPartitionReaderFactory.scala:108)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:484)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
+	at com.datastax.spark.connector.datasource.CassandraPartitionReaderBase.next(CassandraScanPartitionReaderFactory.scala:65)
+	at org.apache.spark.sql.execution.datasources.v2.PartitionIterator.hasNext(DataSourceRDD.scala:79)
+	at org.apache.spark.sql.execution.datasources.v2.MetricsIterator.hasNext(DataSourceRDD.scala:112)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.datastax.oss.driver.api.core.servererrors.InvalidQueryException: Invalid request, too many continuous paging sessions are already running: 2
+	at com.datastax.oss.driver.api.core.servererrors.InvalidQueryException.copy(InvalidQueryException.java:48)
+	at com.datastax.oss.driver.internal.core.util.concurrent.CompletableFutures.getUninterruptibly(CompletableFutures.java:149)
+	at com.datastax.dse.driver.internal.core.cql.continuous.ContinuousCqlRequestSyncProcessor.process(ContinuousCqlRequestSyncProcessor.java:56)
+	at com.datastax.dse.driver.internal.core.cql.continuous.ContinuousCqlRequestSyncProcessor.process(ContinuousCqlRequestSyncProcessor.java:30)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.execute(DefaultSession.java:230)
+	at com.datastax.dse.driver.api.core.cql.continuous.ContinuousSession.executeContinuously(ContinuousSession.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.datastax.spark.connector.cql.SessionProxy.invoke(SessionProxy.scala:43)
+	at com.sun.proxy.$Proxy27.executeContinuously(Unknown Source)
+	at com.datastax.bdp.spark.ContinuousPagingScanner.scan(ContinuousPagingScanner.scala:99)
+	... 26 more
+20/11/13 21:59:33 ERROR Executor: Exception in task 1.0 in stage 0.0 (TID 1)
+java.io.IOException: Invalid request, too many continuous paging sessions are already running: 2. This error may be intermittent, if there are other applications using continuous paging wait for them to finish and re-execute. If the error persists adjust your DSE server setting `continuous_paging.max_concurrent_sessions` or lower the parallelism level of this job (reduce the number of executors and/or assigned cores) or disable continuous paging for this app with spark.dse.continuousPagingEnabled.
+	at com.datastax.bdp.spark.ContinuousPagingScanner.scan(ContinuousPagingScanner.scala:108)
+	at com.datastax.spark.connector.datasource.ScanHelper$.fetchTokenRange(ScanHelper.scala:79)
+	at com.datastax.spark.connector.datasource.CassandraPartitionReaderBase.$anonfun$getIterator$1(CassandraScanPartitionReaderFactory.scala:108)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:484)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
+	at com.datastax.spark.connector.datasource.CassandraPartitionReaderBase.next(CassandraScanPartitionReaderFactory.scala:65)
+	at org.apache.spark.sql.execution.datasources.v2.PartitionIterator.hasNext(DataSourceRDD.scala:79)
+	at org.apache.spark.sql.execution.datasources.v2.MetricsIterator.hasNext(DataSourceRDD.scala:112)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.datastax.oss.driver.api.core.servererrors.InvalidQueryException: Invalid request, too many continuous paging sessions are already running: 2
+	at com.datastax.oss.driver.api.core.servererrors.InvalidQueryException.copy(InvalidQueryException.java:48)
+	at com.datastax.oss.driver.internal.core.util.concurrent.CompletableFutures.getUninterruptibly(CompletableFutures.java:149)
+	at com.datastax.dse.driver.internal.core.cql.continuous.ContinuousCqlRequestSyncProcessor.process(ContinuousCqlRequestSyncProcessor.java:56)
+	at com.datastax.dse.driver.internal.core.cql.continuous.ContinuousCqlRequestSyncProcessor.process(ContinuousCqlRequestSyncProcessor.java:30)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.execute(DefaultSession.java:230)
+	at com.datastax.dse.driver.api.core.cql.continuous.ContinuousSession.executeContinuously(ContinuousSession.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.datastax.spark.connector.cql.SessionProxy.invoke(SessionProxy.scala:43)
+	at com.sun.proxy.$Proxy27.executeContinuously(Unknown Source)
+	at com.datastax.bdp.spark.ContinuousPagingScanner.scan(ContinuousPagingScanner.scala:99)
+	... 26 more
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 5
+20/11/13 21:59:33 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 6
+20/11/13 21:59:33 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+20/11/13 21:59:33 INFO CodeGenerator: Code generated in 19.719677 ms
+20/11/13 21:59:33 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 3.0 in stage 0.0 (TID 3)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 4.0 in stage 0.0 (TID 4)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 7
+20/11/13 21:59:33 INFO Executor: Running task 2.1 in stage 0.0 (TID 7)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 8
+20/11/13 21:59:33 INFO Executor: Running task 1.1 in stage 0.0 (TID 8)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 9
+20/11/13 21:59:33 INFO Executor: Running task 4.1 in stage 0.0 (TID 9)
+20/11/13 21:59:33 ERROR Executor: Exception in task 6.0 in stage 0.0 (TID 6)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 5.0 in stage 0.0 (TID 5)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 10
+20/11/13 21:59:33 INFO Executor: Running task 3.1 in stage 0.0 (TID 10)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 11
+20/11/13 21:59:33 INFO Executor: Running task 6.1 in stage 0.0 (TID 11)
+20/11/13 21:59:33 ERROR Executor: Exception in task 2.1 in stage 0.0 (TID 7)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 4.1 in stage 0.0 (TID 9)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 1.1 in stage 0.0 (TID 8)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 12
+20/11/13 21:59:33 INFO Executor: Running task 5.1 in stage 0.0 (TID 12)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 13
+20/11/13 21:59:33 INFO Executor: Running task 2.2 in stage 0.0 (TID 13)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 14
+20/11/13 21:59:33 INFO Executor: Running task 4.2 in stage 0.0 (TID 14)
+20/11/13 21:59:33 ERROR Executor: Exception in task 6.1 in stage 0.0 (TID 11)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 3.1 in stage 0.0 (TID 10)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 15
+20/11/13 21:59:33 INFO Executor: Running task 1.2 in stage 0.0 (TID 15)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 16
+20/11/13 21:59:33 INFO Executor: Running task 6.2 in stage 0.0 (TID 16)
+20/11/13 21:59:33 ERROR Executor: Exception in task 5.1 in stage 0.0 (TID 12)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 2.2 in stage 0.0 (TID 13)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 4.2 in stage 0.0 (TID 14)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 17
+20/11/13 21:59:33 INFO Executor: Running task 3.2 in stage 0.0 (TID 17)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 18
+20/11/13 21:59:33 INFO Executor: Running task 5.2 in stage 0.0 (TID 18)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 19
+20/11/13 21:59:33 INFO Executor: Running task 2.3 in stage 0.0 (TID 19)
+20/11/13 21:59:33 ERROR Executor: Exception in task 1.2 in stage 0.0 (TID 15)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 6.2 in stage 0.0 (TID 16)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 20
+20/11/13 21:59:33 INFO Executor: Running task 4.3 in stage 0.0 (TID 20)
+20/11/13 21:59:33 ERROR Executor: Exception in task 5.2 in stage 0.0 (TID 18)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 3.2 in stage 0.0 (TID 17)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 ERROR Executor: Exception in task 2.3 in stage 0.0 (TID 19)
+java.lang.ClassCastException: class scala.collection.mutable.WrappedArray$ofRef cannot be cast to class java.lang.String (scala.collection.mutable.WrappedArray$ofRef is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.spark.sql.Row.getString(Row.scala:277)
+	at org.apache.spark.sql.Row.getString$(Row.scala:277)
+	at org.apache.spark.sql.catalyst.expressions.GenericRow.getString(rows.scala:166)
+	at sparkCassandra.Leaves$.$anonfun$main$1(spark-cassandra.scala:31)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.mapelements_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.deserializetoobject_doConsume_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:729)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:340)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:872)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:872)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:349)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:313)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:127)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1377)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:449)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 21
+20/11/13 21:59:33 INFO Executor: Running task 1.3 in stage 0.0 (TID 21)
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Got assigned task 22
+20/11/13 21:59:33 INFO Executor: Running task 6.3 in stage 0.0 (TID 22)
+20/11/13 21:59:33 INFO Executor: Executor is trying to kill task 4.3 in stage 0.0 (TID 20), reason: Stage cancelled
+20/11/13 21:59:33 INFO Executor: Executor is trying to kill task 1.3 in stage 0.0 (TID 21), reason: Stage cancelled
+20/11/13 21:59:33 INFO Executor: Executor is trying to kill task 6.3 in stage 0.0 (TID 22), reason: Stage cancelled
+20/11/13 21:59:33 INFO Executor: Executor interrupted and killed task 4.3 in stage 0.0 (TID 20), reason: Stage cancelled
+20/11/13 21:59:33 INFO Executor: Executor interrupted and killed task 1.3 in stage 0.0 (TID 21), reason: Stage cancelled
+20/11/13 21:59:33 INFO Executor: Executor interrupted and killed task 6.3 in stage 0.0 (TID 22), reason: Stage cancelled
+20/11/13 21:59:33 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+20/11/13 21:59:33 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+tdown

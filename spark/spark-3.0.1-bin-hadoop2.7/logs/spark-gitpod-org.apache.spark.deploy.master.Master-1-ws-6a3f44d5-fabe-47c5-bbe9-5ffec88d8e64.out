@@ -1,0 +1,147 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Spark Command: /home/gitpod/.sdkman/candidates/java/current/bin/java -cp /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64 --port 7077 --webui-port 8080
+========================================
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/16 14:19:50 INFO Master: Started daemon with process name: 3858@ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64
+20/11/16 14:19:50 INFO SignalUtils: Registered signal handler for TERM
+20/11/16 14:19:50 INFO SignalUtils: Registered signal handler for HUP
+20/11/16 14:19:50 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/16 14:19:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/16 14:19:51 INFO SecurityManager: Changing view acls to: gitpod
+20/11/16 14:19:51 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/16 14:19:51 INFO SecurityManager: Changing view acls groups to: 
+20/11/16 14:19:51 INFO SecurityManager: Changing modify acls groups to: 
+20/11/16 14:19:51 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/16 14:19:51 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+20/11/16 14:19:51 INFO Master: Starting Spark master at spark://ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:7077
+20/11/16 14:19:51 INFO Master: Running Spark version 3.0.1
+20/11/16 14:19:51 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+20/11/16 14:19:52 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:8080
+20/11/16 14:19:52 INFO Master: I have been elected leader! New state: ALIVE
+20/11/16 14:20:18 INFO Master: Registering worker 10.8.4.68:43873 with 5 cores, 58.0 GiB RAM
+20/11/16 14:28:59 INFO Master: Registering app Leaves
+20/11/16 14:28:59 INFO Master: Registered app Leaves with ID app-20201116142859-0000
+20/11/16 14:28:59 INFO Master: Launching executor app-20201116142859-0000/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:29:09 INFO Master: Received unregister request from application app-20201116142859-0000
+20/11/16 14:29:09 INFO Master: Removing app app-20201116142859-0000
+20/11/16 14:29:09 INFO Master: 10.8.4.68:47936 got disassociated, removing it.
+20/11/16 14:29:09 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:40191 got disassociated, removing it.
+20/11/16 14:29:09 WARN Master: Got status update for unknown executor app-20201116142859-0000/0
+20/11/16 14:29:36 INFO Master: Registering app Leaves
+20/11/16 14:29:36 INFO Master: Registered app Leaves with ID app-20201116142936-0001
+20/11/16 14:29:36 INFO Master: Launching executor app-20201116142936-0001/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:29:57 INFO Master: Received unregister request from application app-20201116142936-0001
+20/11/16 14:29:57 INFO Master: Removing app app-20201116142936-0001
+20/11/16 14:29:57 INFO Master: 10.8.4.68:49908 got disassociated, removing it.
+20/11/16 14:29:57 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:44523 got disassociated, removing it.
+20/11/16 14:29:57 WARN Master: Got status update for unknown executor app-20201116142936-0001/0
+20/11/16 14:32:07 INFO Master: Registering app Leaves
+20/11/16 14:32:07 INFO Master: Registered app Leaves with ID app-20201116143207-0002
+20/11/16 14:32:07 INFO Master: Launching executor app-20201116143207-0002/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:32:37 INFO Master: Received unregister request from application app-20201116143207-0002
+20/11/16 14:32:37 INFO Master: Removing app app-20201116143207-0002
+20/11/16 14:32:37 INFO Master: 10.8.4.68:57182 got disassociated, removing it.
+20/11/16 14:32:37 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:41005 got disassociated, removing it.
+20/11/16 14:32:37 WARN Master: Got status update for unknown executor app-20201116143207-0002/0
+20/11/16 14:35:59 INFO Master: Registering app Leaves
+20/11/16 14:35:59 INFO Master: Registered app Leaves with ID app-20201116143559-0003
+20/11/16 14:35:59 INFO Master: Launching executor app-20201116143559-0003/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:36:11 INFO Master: Received unregister request from application app-20201116143559-0003
+20/11/16 14:36:11 INFO Master: Removing app app-20201116143559-0003
+20/11/16 14:36:11 INFO Master: 10.8.4.68:40474 got disassociated, removing it.
+20/11/16 14:36:11 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:32827 got disassociated, removing it.
+20/11/16 14:36:11 WARN Master: Got status update for unknown executor app-20201116143559-0003/0
+20/11/16 14:42:41 INFO Master: Registering app Leaves
+20/11/16 14:42:41 INFO Master: Registered app Leaves with ID app-20201116144241-0004
+20/11/16 14:42:41 INFO Master: Launching executor app-20201116144241-0004/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:42:54 INFO Master: Received unregister request from application app-20201116144241-0004
+20/11/16 14:42:54 INFO Master: Removing app app-20201116144241-0004
+20/11/16 14:42:54 INFO Master: 10.8.4.68:34126 got disassociated, removing it.
+20/11/16 14:42:54 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:37415 got disassociated, removing it.
+20/11/16 14:42:54 WARN Master: Got status update for unknown executor app-20201116144241-0004/0
+20/11/16 14:44:59 INFO Master: Registering app Leaves
+20/11/16 14:44:59 INFO Master: Registered app Leaves with ID app-20201116144459-0005
+20/11/16 14:44:59 INFO Master: Launching executor app-20201116144459-0005/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:45:10 INFO Master: Received unregister request from application app-20201116144459-0005
+20/11/16 14:45:10 INFO Master: Removing app app-20201116144459-0005
+20/11/16 14:45:10 INFO Master: 10.8.4.68:41224 got disassociated, removing it.
+20/11/16 14:45:10 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:45947 got disassociated, removing it.
+20/11/16 14:45:11 WARN Master: Got status update for unknown executor app-20201116144459-0005/0
+20/11/16 14:46:20 INFO Master: Registering app Leaves
+20/11/16 14:46:20 INFO Master: Registered app Leaves with ID app-20201116144620-0006
+20/11/16 14:46:20 INFO Master: Launching executor app-20201116144620-0006/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:46:34 INFO Master: Received unregister request from application app-20201116144620-0006
+20/11/16 14:46:34 INFO Master: Removing app app-20201116144620-0006
+20/11/16 14:46:34 INFO Master: 10.8.4.68:45480 got disassociated, removing it.
+20/11/16 14:46:34 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:40293 got disassociated, removing it.
+20/11/16 14:46:34 WARN Master: Got status update for unknown executor app-20201116144620-0006/0
+20/11/16 14:49:09 INFO Master: Registering app Leaves
+20/11/16 14:49:09 INFO Master: Registered app Leaves with ID app-20201116144909-0007
+20/11/16 14:49:09 INFO Master: Launching executor app-20201116144909-0007/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:49:49 INFO Master: Received unregister request from application app-20201116144909-0007
+20/11/16 14:49:49 INFO Master: Removing app app-20201116144909-0007
+20/11/16 14:49:49 INFO Master: 10.8.4.68:55308 got disassociated, removing it.
+20/11/16 14:49:49 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:37879 got disassociated, removing it.
+20/11/16 14:49:49 WARN Master: Got status update for unknown executor app-20201116144909-0007/0
+20/11/16 14:52:27 INFO Master: Registering app Leaves
+20/11/16 14:52:27 INFO Master: Registered app Leaves with ID app-20201116145227-0008
+20/11/16 14:52:27 INFO Master: Launching executor app-20201116145227-0008/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:53:02 INFO Master: Received unregister request from application app-20201116145227-0008
+20/11/16 14:53:02 INFO Master: Removing app app-20201116145227-0008
+20/11/16 14:53:02 INFO Master: 10.8.4.68:37942 got disassociated, removing it.
+20/11/16 14:53:02 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:44559 got disassociated, removing it.
+20/11/16 14:53:03 WARN Master: Got status update for unknown executor app-20201116145227-0008/0
+20/11/16 14:56:44 INFO Master: Registering app Leaves
+20/11/16 14:56:44 INFO Master: Registered app Leaves with ID app-20201116145644-0009
+20/11/16 14:56:44 INFO Master: Launching executor app-20201116145644-0009/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 14:57:23 INFO Master: Received unregister request from application app-20201116145644-0009
+20/11/16 14:57:23 INFO Master: Removing app app-20201116145644-0009
+20/11/16 14:57:23 INFO Master: 10.8.4.68:51250 got disassociated, removing it.
+20/11/16 14:57:23 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:40771 got disassociated, removing it.
+20/11/16 14:57:23 WARN Master: Got status update for unknown executor app-20201116145644-0009/0
+20/11/16 15:02:22 INFO Master: Registering app Leaves
+20/11/16 15:02:22 INFO Master: Registered app Leaves with ID app-20201116150222-0010
+20/11/16 15:02:22 INFO Master: Launching executor app-20201116150222-0010/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 15:02:50 INFO Master: Received unregister request from application app-20201116150222-0010
+20/11/16 15:02:50 INFO Master: Removing app app-20201116150222-0010
+20/11/16 15:02:50 INFO Master: 10.8.4.68:41248 got disassociated, removing it.
+20/11/16 15:02:50 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:46249 got disassociated, removing it.
+20/11/16 15:02:50 WARN Master: Got status update for unknown executor app-20201116150222-0010/0
+20/11/16 15:03:59 INFO Master: Registering app Leaves
+20/11/16 15:03:59 INFO Master: Registered app Leaves with ID app-20201116150359-0011
+20/11/16 15:03:59 INFO Master: Launching executor app-20201116150359-0011/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 15:04:41 INFO Master: Received unregister request from application app-20201116150359-0011
+20/11/16 15:04:41 INFO Master: Removing app app-20201116150359-0011
+20/11/16 15:04:41 INFO Master: 10.8.4.68:47264 got disassociated, removing it.
+20/11/16 15:04:41 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:46185 got disassociated, removing it.
+20/11/16 15:04:42 WARN Master: Got status update for unknown executor app-20201116150359-0011/0
+20/11/16 15:26:44 INFO Master: Registering app Leaves
+20/11/16 15:26:44 INFO Master: Registered app Leaves with ID app-20201116152644-0012
+20/11/16 15:26:44 INFO Master: Launching executor app-20201116152644-0012/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 15:27:09 INFO Master: Received unregister request from application app-20201116152644-0012
+20/11/16 15:27:09 INFO Master: Removing app app-20201116152644-0012
+20/11/16 15:27:09 INFO Master: 10.8.4.68:57528 got disassociated, removing it.
+20/11/16 15:27:09 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:45131 got disassociated, removing it.
+20/11/16 15:27:09 WARN Master: Got status update for unknown executor app-20201116152644-0012/0
+20/11/16 15:30:43 INFO Master: Registering app Leaves
+20/11/16 15:30:43 INFO Master: Registered app Leaves with ID app-20201116153043-0013
+20/11/16 15:30:43 INFO Master: Launching executor app-20201116153043-0013/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 15:31:26 INFO Master: Received unregister request from application app-20201116153043-0013
+20/11/16 15:31:26 INFO Master: Removing app app-20201116153043-0013
+20/11/16 15:31:26 INFO Master: 10.8.4.68:46866 got disassociated, removing it.
+20/11/16 15:31:26 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:37921 got disassociated, removing it.
+20/11/16 15:31:26 WARN Master: Got status update for unknown executor app-20201116153043-0013/0
+20/11/16 15:36:01 INFO Master: Registering app Leaves
+20/11/16 15:36:01 INFO Master: Registered app Leaves with ID app-20201116153601-0014
+20/11/16 15:36:01 INFO Master: Launching executor app-20201116153601-0014/0 on worker worker-20201116142016-10.8.4.68-43873
+20/11/16 15:36:47 INFO Master: Received unregister request from application app-20201116153601-0014
+20/11/16 15:36:47 INFO Master: Removing app app-20201116153601-0014
+20/11/16 15:36:47 INFO Master: 10.8.4.68:42126 got disassociated, removing it.
+20/11/16 15:36:47 INFO Master: ws-6a3f44d5-fabe-47c5-bbe9-5ffec88d8e64:46413 got disassociated, removing it.
+20/11/16 15:36:47 WARN Master: Got status update for unknown executor app-20201116153601-0014/0

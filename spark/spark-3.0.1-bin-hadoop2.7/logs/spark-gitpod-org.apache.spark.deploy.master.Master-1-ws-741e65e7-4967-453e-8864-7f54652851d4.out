@@ -1,0 +1,64 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Spark Command: /home/gitpod/.sdkman/candidates/java/current/bin/java -cp /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host ws-741e65e7-4967-453e-8864-7f54652851d4 --port 7077 --webui-port 8080
+========================================
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/14 17:28:25 INFO Master: Started daemon with process name: 3314@ws-741e65e7-4967-453e-8864-7f54652851d4
+20/11/14 17:28:25 INFO SignalUtils: Registered signal handler for TERM
+20/11/14 17:28:25 INFO SignalUtils: Registered signal handler for HUP
+20/11/14 17:28:25 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/14 17:28:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/14 17:28:26 INFO SecurityManager: Changing view acls to: gitpod
+20/11/14 17:28:26 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/14 17:28:26 INFO SecurityManager: Changing view acls groups to: 
+20/11/14 17:28:26 INFO SecurityManager: Changing modify acls groups to: 
+20/11/14 17:28:26 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/14 17:28:26 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+20/11/14 17:28:26 INFO Master: Starting Spark master at spark://ws-741e65e7-4967-453e-8864-7f54652851d4:7077
+20/11/14 17:28:26 INFO Master: Running Spark version 3.0.1
+20/11/14 17:28:26 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+20/11/14 17:28:26 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://ws-741e65e7-4967-453e-8864-7f54652851d4:8080
+20/11/14 17:28:27 INFO Master: I have been elected leader! New state: ALIVE
+20/11/14 17:29:54 INFO Master: Registering app Spark shell
+20/11/14 17:29:54 INFO Master: Registered app Spark shell with ID app-20201114172954-0000
+20/11/14 17:29:54 WARN Master: App app-20201114172954-0000 requires more resource than any of Workers could have.
+20/11/14 17:30:54 INFO Master: Received unregister request from application app-20201114172954-0000
+20/11/14 17:30:55 INFO Master: Removing app app-20201114172954-0000
+20/11/14 17:30:55 INFO Master: 10.8.19.94:52230 got disassociated, removing it.
+20/11/14 17:30:55 INFO Master: ws-741e65e7-4967-453e-8864-7f54652851d4:36105 got disassociated, removing it.
+20/11/14 17:31:33 INFO Master: Registering app Spark shell
+20/11/14 17:31:33 INFO Master: Registered app Spark shell with ID app-20201114173133-0001
+20/11/14 17:31:33 WARN Master: App app-20201114173133-0001 requires more resource than any of Workers could have.
+20/11/14 17:35:42 INFO Master: Removing app app-20201114173133-0001
+20/11/14 17:35:42 INFO Master: Received unregister request from application app-20201114173133-0001
+20/11/14 17:35:42 INFO Master: 10.8.19.94:56860 got disassociated, removing it.
+20/11/14 17:35:42 INFO Master: ws-741e65e7-4967-453e-8864-7f54652851d4:36101 got disassociated, removing it.
+20/11/14 17:36:05 INFO Master: Registering app Spark shell
+20/11/14 17:36:05 INFO Master: Registered app Spark shell with ID app-20201114173605-0002
+20/11/14 17:36:05 WARN Master: App app-20201114173605-0002 requires more resource than any of Workers could have.
+20/11/14 17:38:05 INFO Master: Received unregister request from application app-20201114173605-0002
+20/11/14 17:38:05 INFO Master: Removing app app-20201114173605-0002
+20/11/14 17:38:05 INFO Master: 10.8.19.94:42804 got disassociated, removing it.
+20/11/14 17:38:05 INFO Master: ws-741e65e7-4967-453e-8864-7f54652851d4:35537 got disassociated, removing it.
+20/11/14 17:44:31 INFO Master: Registering worker 10.8.19.94:38199 with 5 cores, 58.0 GiB RAM
+20/11/14 17:44:56 INFO Master: Registering app Spark shell
+20/11/14 17:44:56 INFO Master: Registered app Spark shell with ID app-20201114174456-0003
+20/11/14 17:44:56 INFO Master: Launching executor app-20201114174456-0003/0 on worker worker-20201114174430-10.8.19.94-38199
+20/11/14 17:47:41 INFO Master: Received unregister request from application app-20201114174456-0003
+20/11/14 17:47:41 INFO Master: Removing app app-20201114174456-0003
+20/11/14 17:47:41 INFO Master: 10.8.19.94:42910 got disassociated, removing it.
+20/11/14 17:47:41 INFO Master: ws-741e65e7-4967-453e-8864-7f54652851d4:44253 got disassociated, removing it.
+20/11/14 17:47:41 WARN Master: Got status update for unknown executor app-20201114174456-0003/0
+20/11/14 17:47:57 INFO Master: Registering app Spark shell
+20/11/14 17:47:57 INFO Master: Registered app Spark shell with ID app-20201114174757-0004
+20/11/14 17:47:57 INFO Master: Launching executor app-20201114174757-0004/0 on worker worker-20201114174430-10.8.19.94-38199
+20/11/14 17:48:54 INFO Master: Received unregister request from application app-20201114174757-0004
+20/11/14 17:48:54 INFO Master: Removing app app-20201114174757-0004
+20/11/14 17:48:54 INFO Master: 10.8.19.94:52700 got disassociated, removing it.
+20/11/14 17:48:54 INFO Master: ws-741e65e7-4967-453e-8864-7f54652851d4:44255 got disassociated, removing it.
+20/11/14 17:48:54 WARN Master: Got status update for unknown executor app-20201114174757-0004/0

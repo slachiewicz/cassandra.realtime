@@ -1,0 +1,4 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=42155" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-a079cda6-7ce0-4381-9843-8a14b54c3899:42155" "--executor-id" "0" "--hostname" "10.8.1.247" "--cores" "5" "--app-id" "app-20201118151459-0000" "--worker-url" "spark://Worker@10.8.1.247:44437"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m

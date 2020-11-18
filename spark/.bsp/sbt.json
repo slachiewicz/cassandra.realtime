@@ -1,0 +1,1 @@
+{"name":"sbt","version":"1.4.1","bspVersion":"2.0.0-M5","languages":["scala"],"argv":["/home/gitpod/.sdkman/candidates/java/11.0.6.fx-zulu/bin/java","-Xms100m","-Xmx100m","-classpath","/workspace/cassandra.realtime/spark/sbt/bin/sbt-launch.jar","xsbt.boot.Boot","-bsp"]}

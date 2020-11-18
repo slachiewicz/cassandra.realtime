@@ -1,0 +1,48 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=46735" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:46735" "--executor-id" "0" "--hostname" "10.8.9.203" "--cores" "5" "--app-id" "app-20201117202541-0004" "--worker-url" "spark://Worker@10.8.9.203:37659"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/17 20:25:43 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 84748@ws-763ae24b-f444-4ec9-ab04-58a9b208cf41
+20/11/17 20:25:43 INFO SignalUtils: Registered signal handler for TERM
+20/11/17 20:25:43 INFO SignalUtils: Registered signal handler for HUP
+20/11/17 20:25:43 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/17 20:25:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/17 20:25:44 INFO SecurityManager: Changing view acls to: gitpod
+20/11/17 20:25:44 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/17 20:25:44 INFO SecurityManager: Changing view acls groups to: 
+20/11/17 20:25:44 INFO SecurityManager: Changing modify acls groups to: 
+20/11/17 20:25:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/17 20:25:44 INFO TransportClientFactory: Successfully created connection to ws-763ae24b-f444-4ec9-ab04-58a9b208cf41/10.8.9.203:46735 after 102 ms (0 ms spent in bootstraps)
+20/11/17 20:25:45 INFO SecurityManager: Changing view acls to: gitpod
+20/11/17 20:25:45 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/17 20:25:45 INFO SecurityManager: Changing view acls groups to: 
+20/11/17 20:25:45 INFO SecurityManager: Changing modify acls groups to: 
+20/11/17 20:25:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/17 20:25:45 INFO TransportClientFactory: Successfully created connection to ws-763ae24b-f444-4ec9-ab04-58a9b208cf41/10.8.9.203:46735 after 4 ms (0 ms spent in bootstraps)
+20/11/17 20:25:45 INFO DiskBlockManager: Created local directory at /tmp/spark-7d48140b-9f01-48ee-a4e9-251e0afff9c6/executor-a57f30e4-ffed-49a0-a891-8a1869b90d40/blockmgr-e09df8d9-da96-4291-8ba9-e4bdd006ba62
+20/11/17 20:25:45 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+20/11/17 20:25:45 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@ws-763ae24b-f444-4ec9-ab04-58a9b208cf41:46735
+20/11/17 20:25:45 INFO WorkerWatcher: Connecting to worker spark://Worker@10.8.9.203:37659
+20/11/17 20:25:45 INFO TransportClientFactory: Successfully created connection to /10.8.9.203:37659 after 4 ms (0 ms spent in bootstraps)
+20/11/17 20:25:45 INFO WorkerWatcher: Successfully connected to spark://Worker@10.8.9.203:37659
+20/11/17 20:25:45 INFO ResourceUtils: ==============================================================
+20/11/17 20:25:45 INFO ResourceUtils: Resources for spark.executor:
+
+20/11/17 20:25:45 INFO ResourceUtils: ==============================================================
+20/11/17 20:25:45 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+20/11/17 20:25:45 INFO Executor: Starting executor ID 0 on host 10.8.9.203
+20/11/17 20:25:46 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46805.
+20/11/17 20:25:46 INFO NettyBlockTransferService: Server created on 10.8.9.203:46805
+20/11/17 20:25:46 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/11/17 20:25:46 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 10.8.9.203, 46805, None)
+20/11/17 20:25:46 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 10.8.9.203, 46805, None)
+20/11/17 20:25:46 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 10.8.9.203, 46805, None)
+20/11/17 20:26:24 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+20/11/17 20:26:24 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+tdown

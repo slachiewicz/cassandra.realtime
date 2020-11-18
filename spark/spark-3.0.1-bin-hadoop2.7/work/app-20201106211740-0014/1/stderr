@@ -1,0 +1,23 @@
+Spark Executor Command: "/home/gitpod/.sdkman/candidates/java/current/bin/java" "-cp" "/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/conf/:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/*" "-Xmx1024M" "-Dspark.driver.port=43987" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca:43987" "--executor-id" "1" "--hostname" "10.8.3.37" "--cores" "5" "--app-id" "app-20201106211740-0014" "--worker-url" "spark://Worker@10.8.3.37:36683"
+========================================
+
+Picked up JAVA_TOOL_OPTIONS: -Xmx2254m
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/11/06 21:19:45 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 81515@ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca
+20/11/06 21:19:45 INFO SignalUtils: Registered signal handler for TERM
+20/11/06 21:19:45 INFO SignalUtils: Registered signal handler for HUP
+20/11/06 21:19:45 INFO SignalUtils: Registered signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+20/11/06 21:19:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/11/06 21:19:46 INFO SecurityManager: Changing view acls to: gitpod
+20/11/06 21:19:46 INFO SecurityManager: Changing modify acls to: gitpod
+20/11/06 21:19:46 INFO SecurityManager: Changing view acls groups to: 
+20/11/06 21:19:46 INFO SecurityManager: Changing modify acls groups to: 
+20/11/06 21:19:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(gitpod); groups with view permissions: Set(); users  with modify permissions: Set(gitpod); groups with modify permissions: Set()
+20/11/06 21:19:46 INFO TransportClientFactory: Successfully created connection to ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:43987 after 97 ms (0 ms spent in bootstraps)
+20/11/06 21:20:33 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+ion to ws-73ba27b9-751c-4e7f-a91d-40a66b53d3ca/10.8.3.37:43987 after 97 ms (0 ms spent in bootstraps)

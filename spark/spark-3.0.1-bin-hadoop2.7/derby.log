@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Nov 14 17:48:20 UTC 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0175-c7df-46d2-000001236610 
+on database directory /workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/metastore_db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
+Loaded from file:/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7/jars/derby-10.12.1.1.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=11.0.6+10-LTS
+user.dir=/workspace/cassandra.realtime/spark/spark-3.0.1-bin-hadoop2.7
+os.name=Linux
+os.arch=amd64
+os.version=4.14.174+
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
